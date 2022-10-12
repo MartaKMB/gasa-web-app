@@ -1,0 +1,20 @@
+.gasa-app-welcome-txt {
+    &__welcome-txt {
+        text-align: center;
+        border: 2px solid $base-black-font;
+        padding: 1em;
+        line-height: 1.5;
+        background-color: $base-pink;
+        border-radius: $base-border-radius;
+
+        h1 {
+            font-size: $big-font-title-size;
+        }
+    }
+
+    &__explanation-txt {
+        margin: 1em auto;
+        text-align: center;
+        font-size: $small-font-title-size;
+    }
+}

@@ -1,0 +1,30 @@
+.login-page {
+    @include page-container;
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-height: calc(100% - 200px);
+        height: 60%;
+        width: 100%;
+
+        &__form-element {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+
+            input[type=text],
+            input[type=email] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border-radius: $base-border-radius;
+                font-size: $medium-font-title-size;
+            }
+        }
+    }
+}

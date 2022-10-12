@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'reset';
+
+// images
+@import './imagesAnimations/DogHead';
+
+// reusable components
+@import './componentsStyles/ButtonComponent';
+@import './componentsStyles/WelcomeTxtComponent';
+@import './componentsStyles/WrongDataMessageComponent';
+
+// components
+@import './componentsStyles/App';
+@import './componentsStyles/WelcomePage';
+@import './componentsStyles/LoginPage';
