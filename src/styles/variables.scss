@@ -4,7 +4,7 @@ $base-font-family: 'Lato', sans-serif;
 
 $small-font-title-size: 1.2em;
 $medium-font-title-size: 1.3em;
-$big-font-title-size: 3em;
+$big-font-title-size: 2em;
 
 $base-black-font: #2B2B2B;
 $base-yellow: #F0AF02;
@@ -56,9 +56,10 @@ $base-border-radius: 15px;
     align-items: center;
 
     &__container {
+        width: 95%;
         max-width: 400px;
-        width: 90vw;
-        height: 75vh;
+        height: 95%;
+        max-height: 700px;
         padding: .5em 2em;
         display: flex;
         flex-direction: column;

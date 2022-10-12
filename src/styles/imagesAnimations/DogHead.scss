@@ -1,4 +1,7 @@
 .dog-head-container {
+    width: 95%;
+    padding-bottom: 2em;
+
     &__sleeping-move {
         animation: 3s wiggle ease infinite;
     }

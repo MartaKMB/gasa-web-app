@@ -1,5 +1,5 @@
 import { Navigate } from 'react-router-dom';
-const permission = false;
+const permission = true;
 
 function PrivateRoute({ children }) {
     return (
