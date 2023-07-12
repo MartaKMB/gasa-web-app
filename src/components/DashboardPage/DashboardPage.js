@@ -1,8 +1,16 @@
+import { useState, useEffect } from "react";
+
 const DashboardPage = () => {
+    const [userNameForApp, setUserNameForApp] = useState();
+
+    useEffect(() => {
+        const userNameFromStorage = JSON.parse(localStorage.getItem('userNameWithPermission'));
+        userNameFromStorage && setUserNameForApp(userNameFromStorage);
+    }, []);
+
     return (
         <div className='admin-logged-page'>
-            <p>jesteś zalogowany</p>
-            <h3>Dzień dobry Adminie!</h3>
+            <h3>{`Cześć ${userNameForApp}!`}</h3>
         </div>
     );
 }

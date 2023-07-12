@@ -15,12 +15,11 @@ function App() {
           {/* <Route path="news" element={<News />} /> */}
           {/* <Route path="contact" element={<Contact />} /> */}
           <Route path="login" element={<LoginPage />} />
-          <Route path="dashboard" element={<PrivateRoute><DashboardPage /></PrivateRoute>} />
+          <Route path="dashboard" element={<PrivateRoute><DashboardPage/></PrivateRoute>} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>
     </Router>
-
   );
 }
 

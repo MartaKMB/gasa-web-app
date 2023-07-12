@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+@keyframes wiggle {
+  0% {
+    transform: rotate(-0.2deg);
+  }
+  20% {
+    transform: rotate(0.1deg);
+  }
+  40% {
+    transform: rotate(-0.2deg);
+  }
+  60% {
+    transform: rotate(0.1deg);
+  }
+  90% {
+    transform: rotate(-0.2deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}/*# sourceMappingURL=variables.css.map */

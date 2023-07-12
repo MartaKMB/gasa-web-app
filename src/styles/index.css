@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+@keyframes wiggle {
+  0% {
+    transform: rotate(-0.2deg);
+  }
+  20% {
+    transform: rotate(0.1deg);
+  }
+  40% {
+    transform: rotate(-0.2deg);
+  }
+  60% {
+    transform: rotate(0.1deg);
+  }
+  90% {
+    transform: rotate(-0.2deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dog-head-container {
+  width: 95%;
+  padding-bottom: 2em;
+}
+.dog-head-container__sleeping-move {
+  animation: 3s wiggle ease infinite;
+}
+
+.gasa-app-button {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 1.3;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #F0AF02;
+  cursor: pointer;
+  width: 100%;
+}
+.gasa-app-button:hover {
+  background-color: transparent;
+}
+.gasa-app-button--with-pulse {
+  animation: 1s wiggle ease 10s 10;
+}
+
+.gasa-app-welcome-txt__welcome-txt {
+  text-align: center;
+  border: 2px solid #2B2B2B;
+  padding: 1em;
+  line-height: 1.5;
+  background-color: #F8AFB2;
+  border-radius: 15px;
+}
+.gasa-app-welcome-txt__welcome-txt h1 {
+  font-size: 2em;
+}
+.gasa-app-welcome-txt__explanation-txt {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.gasa-app-wrong-data-message {
+  width: 100%;
+  font-weight: 700;
+  color: #D45715;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gasa-web-app-container {
+  background-color: #FCF1DA;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  color: #2B2B2B;
+}
+
+.welcome-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-page__container {
+  width: 95%;
+  max-width: 400px;
+  height: 95%;
+  max-height: 700px;
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page__container {
+  width: 95%;
+  max-width: 400px;
+  height: 95%;
+  max-height: 700px;
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login-page .form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-height: calc(100% - 200px);
+  height: 60%;
+  width: 100%;
+}
+.login-page .form-section__form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.login-page .form-section__form-element input[type=text],
+.login-page .form-section__form-element input[type=email],
+.login-page .form-section__form-element input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-size: 1.3em;
+}/*# sourceMappingURL=index.css.map */

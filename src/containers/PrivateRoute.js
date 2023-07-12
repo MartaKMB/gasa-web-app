@@ -1,9 +1,11 @@
 import { Navigate } from 'react-router-dom';
-const permission = true;
+
+// const permission = true;
 
 function PrivateRoute({ children }) {
+    const userPermissionFromStorage = JSON.parse(localStorage.getItem('hasUserPermission'));
     return (
-        permission ? children : <Navigate to="/login" />
+        userPermissionFromStorage ? children : <Navigate to="/login" />
     );
 }
 

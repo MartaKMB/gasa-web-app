@@ -30,11 +30,14 @@ const LoginPage = () => {
         let emailValidator = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         if (passwordInput === PASSWORD && emailValidator.test(userEmailInput)) {
-            console.log('ZALOGUJ!');
             setValidation(true, true);
+            localStorage.setItem('userNameWithPermission', JSON.stringify(userNameInput));
+            localStorage.setItem('hasUserPermission', JSON.stringify(true));
+
             setUserNameInput('');
             setUserEmailInput('');
             setPasswordInput('');
+            
             navigate('/dashboard');
         } else if (passwordInput !== PASSWORD && emailValidator.test(userEmailInput)) {
             setValidation(true, false);
