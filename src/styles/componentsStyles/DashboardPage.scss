@@ -1,0 +1,30 @@
+.dashboard-page {
+    @include page-container;
+    
+    &__welcome-dashboard-section,
+    &__rules-dashboard-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 35%;
+    }
+
+    &__welcome-dashboard-section {
+        h4 {
+            text-align: center;
+        }
+    }
+
+    &__rules-dashboard-section {
+        border-radius: $base-border-radius;
+        background-color: $base-orange;
+        padding: 1em 2em;
+        color: $base-baige;
+        font-weight: bold;
+
+        li {
+            padding-bottom: 0.25em;
+        }
+    }
+}

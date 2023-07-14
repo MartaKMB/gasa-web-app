@@ -76,7 +76,6 @@ const LoginPage = () => {
                     <ButtonComponent name='zaloguj' handleOnClick={handleOnSubmitLogin} />
                 </form>
             </section>
-
         </div>
     )
 }
