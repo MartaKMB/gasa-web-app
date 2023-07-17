@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import DogPaw from '../../images/svgImages/DogPaw';
 
 const DashboardPage = () => {
     const [userNameForApp, setUserNameForApp] = useState();
+
+    let navigate = useNavigate();
 
     useEffect(() => {
         const userNameFromStorage = JSON.parse(localStorage.getItem('userNameWithPermission'));
@@ -12,7 +16,7 @@ const DashboardPage = () => {
 
     const handleOnStart = e => {
         e.preventDefault();
-        console.log("start");
+        navigate('/choice');
     };
 
     return (

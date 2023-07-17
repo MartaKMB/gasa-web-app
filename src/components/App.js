@@ -5,6 +5,7 @@ import PrivateRoute from '../containers/PrivateRoute';
 import LoginPage from './LoginPage/LoginPage';
 import WelcomePage from './WelcomePage/WelcomePage';
 import DashboardPage from './DashboardPage/DashboardPage';
+import ChoicePage from './ChoicePage/ChoicePage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           {/* <Route path="contact" element={<Contact />} /> */}
           <Route path="login" element={<LoginPage />} />
           <Route path="dashboard" element={<PrivateRoute><DashboardPage/></PrivateRoute>} />
+          <Route path="choice" element={<PrivateRoute><ChoicePage/></PrivateRoute>} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>
