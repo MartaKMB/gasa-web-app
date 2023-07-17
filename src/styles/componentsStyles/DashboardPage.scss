@@ -10,18 +10,30 @@
         height: 35%;
     }
 
-    &__welcome-dashboard-section {
-        h4 {
+    .welcome-dashboard-section {
+        &__hello-txt {
+            font-size: 2em;
+        }
+        &__app-description-txt {
             text-align: center;
+            padding-top: 1em;
         }
     }
 
-    &__rules-dashboard-section {
+    .rules-dashboard-section {
         border-radius: $base-border-radius;
         background-color: $base-orange;
-        padding: 1em 2em;
+        padding: 0 2em 1em;
         color: $base-baige;
         font-weight: bold;
+
+        &__rules-title {
+            background-color: $base-baige;
+            color: $base-orange;
+            padding: 0.5em;
+            border-bottom-right-radius: $base-border-radius;
+            border-bottom-left-radius: $base-border-radius;
+        }
 
         li {
             padding-bottom: 0.25em;
