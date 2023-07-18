@@ -1,3 +1,32 @@
 .choice-page {
-    // @include page-container;
+    @include page-container;
+
+    .start-choice-page-header {
+        display: flex;
+        margin-bottom: 1em;
+        
+        &__choice-title {
+            padding-left: 1em;
+            text-align: center;
+        }
+    }
+
+    .start-choice-page-section {
+        border-bottom: 1px solid $base-black-font;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &__section-description {
+            text-align: center;
+            padding: .5em 0;
+        }
+
+        .gasa-app-button {
+            &:nth-of-type(2) {
+                margin-top: 0;
+            }
+        }
+    }
 }
