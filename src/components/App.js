@@ -6,6 +6,7 @@ import LoginPage from './LoginPage/LoginPage';
 import WelcomePage from './WelcomePage/WelcomePage';
 import DashboardPage from './DashboardPage/DashboardPage';
 import StartChoicePage from './ChoicePage/StartChoicePage';
+import AllTechniquesPage from './TechniquesPage/AllTechniquesPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="dashboard" element={<PrivateRoute><DashboardPage/></PrivateRoute>} />
           <Route path="choice" element={<PrivateRoute><StartChoicePage/></PrivateRoute>} />
+          <Route path="all-techniques" element={<PrivateRoute><AllTechniquesPage/></PrivateRoute>} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>

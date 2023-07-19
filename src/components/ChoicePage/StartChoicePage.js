@@ -15,12 +15,12 @@ const StartChoicePage = () => {
   const handleOnChoice = (e, ownerChoice) => {
     e.preventDefault();
     switch (ownerChoice) {
-      case "DOG_CHOICE":
-        navigate("/fallow-dog");
-        break;
-      case "NO_TOUCH":
-      case "FIRST_TOUCH":
       case "ALL_TECHNIQUES":
+        navigate("/all-techniques");
+        break;
+      case "DOG_CHOICE":
+        case "NO_TOUCH":
+      case "FIRST_TOUCH":
         console.log("klik w: ", ownerChoice);
         break;
       default:
