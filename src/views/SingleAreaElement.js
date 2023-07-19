@@ -1,3 +1,4 @@
+import PointHandWithWristband from "../assets/svgImages/PointHandWithWristband";
 import SingleTechniqueElement from "./SingleTechniqueElement";
 
 const SingleAreaElement = (area) => {
@@ -10,7 +11,7 @@ const SingleAreaElement = (area) => {
 
   return (
     <>
-      <div>{`obszar: ${area.area.name}`}</div>
+      <div>{`obszar: ${area.area.name}`} <PointHandWithWristband/></div>
       {areaTechniquesToDisplay}
     </>
   );

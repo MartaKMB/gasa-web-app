@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import DogHead from "../../images/svgImages/DogHead";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import WelcomeTxtComponent from "../WelcomeTxtComponent/WelcomeTxtComponent";
+import DogHead from "../assets/svgImages/DogHead";
+import ButtonComponent from "../components/ButtonComponent";
+import WelcomeTxtComponent from "../components/WelcomeTxtComponent";
 
 const WelcomePage = () => {
     let navigate = useNavigate();

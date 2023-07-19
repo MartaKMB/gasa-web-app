@@ -1,5 +1,5 @@
 import LyingDog from "../../images/svgImages/LyingDog";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../components/ButtonComponent";
 
 const BodyPartChoicePage = () => {
   const handleOnChoice = (e, dogChoice) => {

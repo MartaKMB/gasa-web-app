@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import PrivateRoute from '../containers/PrivateRoute';
+import PrivateRoute from './containers/PrivateRoute';
 
-import LoginPage from './LoginPage/LoginPage';
-import WelcomePage from './WelcomePage/WelcomePage';
-import DashboardPage from './DashboardPage/DashboardPage';
-import StartChoicePage from './ChoicePage/StartChoicePage';
-import AllTechniquesPage from './TechniquesPage/AllTechniquesPage';
+import LoginPage from './views/LoginPage';
+import WelcomePage from './views/WelcomePage';
+import DashboardPage from './views/DashboardPage';
+import StartChoicePage from './views/StartChoicePage';
+import AllTechniquesPage from './views/AllTechniquesPage';
 
 function App() {
   return (
@@ -28,3 +28,6 @@ function App() {
 }
 
 export default App;
+
+// architecrture based on https://www.knowledgehut.com/blog/web-development/react-js-architecture
+// styles not touched yet

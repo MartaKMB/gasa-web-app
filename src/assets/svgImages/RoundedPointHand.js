@@ -1,4 +1,4 @@
-const PointHand = () => {
+const RoundedPointHand = () => {
   const colorFillValue = "#F3E8CF";
   const colorStrokeValue = "#000000";
   const numberStrokeMiterLimit = "10";
@@ -17,6 +17,7 @@ const PointHand = () => {
       x="0px"
       y="0px"
       viewBox="0 0 131.38 137.01"
+      className="rounded-point-hand-container"
     >
       <g>
         <path
@@ -54,4 +55,4 @@ const PointHand = () => {
   );
 };
 
-export default PointHand;
+export default RoundedPointHand;

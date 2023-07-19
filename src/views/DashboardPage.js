@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import DogPaw from '../../images/svgImages/DogPaw';
+import ButtonComponent from "../components/ButtonComponent";
+import DogPaw from '../assets/svgImages/DogPaw';
 
 const DashboardPage = () => {
     const [userNameForApp, setUserNameForApp] = useState();

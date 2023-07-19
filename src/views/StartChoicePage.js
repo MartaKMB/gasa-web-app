@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-import PointHand from "../../images/svgImages/PointHand";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import RoundedPointHand from "../assets/svgImages/RoundedPointHand";
+import ButtonComponent from "../components/ButtonComponent";
 
 const StartChoicePage = () => {
   const ownerChoiceArray = [
@@ -32,7 +32,7 @@ const StartChoicePage = () => {
     <div className="choice-page">
       <section className="choice-page__container">
         <header className="start-choice-page-header">
-          <PointHand />
+          <RoundedPointHand />
           <h2 className="start-choice-page-header__choice-title">
             Zapytaj Twojego Psa na co ma ochotę podczas tej sesji relaksu.
           </h2>

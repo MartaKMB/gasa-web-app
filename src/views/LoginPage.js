@@ -1,6 +1,6 @@
-import WelcomeTxtComponent from "../WelcomeTxtComponent/WelcomeTxtComponent";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import WrongDataMessageComponent from "../WrongDataMessageComponent/WrongDataMessageComponent";
+import WelcomeTxtComponent from "../components/WelcomeTxtComponent";
+import ButtonComponent from "../components/ButtonComponent";
+import WrongDataMessageComponent from "../components/WrongDataMessageComponent";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
