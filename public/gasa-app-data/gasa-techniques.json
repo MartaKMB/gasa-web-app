@@ -1,6 +1,6 @@
 {
     "name": "All GaSa techniques",
-    "copyrights": "DeGaSa - Marta Mucha-Balcerek",
+    "copyrights": "© DeGaSa - Marta Mucha-Balcerek",
     "email": "kontakt@martamucha.pl",
     "techniquesForGasaAreas": [
         {
@@ -12,7 +12,7 @@
                 "techniqueName": "CHEST_V",
                 "techniqueTitle": "ruch V",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/CHEST_V.png"
             },
             {
                 "techniqueName": "CHEST_OPEN_BOOK",

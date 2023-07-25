@@ -1,5 +1,5 @@
 import SingleAreaElement from "../components/PageElements/SingleAreaElement";
-import pngImage from "../assets/pngImages/chest-v.png";
+// import pngImage from "../assets/pngImages/chest-v.png";
 import { useEffect, useState } from "react";
 
 const AllTechniquesPage = () => {
@@ -31,7 +31,7 @@ const AllTechniquesPage = () => {
   return (
     <>
       <div>WSZYSTKIE TECHNIKI</div>
-      <img src={pngImage} alt="klatka piersiowa V" />
+      <img src={gasaData && gasaData.techniquesForGasaAreas[0].techniques[0].techniqueImg} alt="klatka piersiowa V" />
       {gasaAreaElementsToDisplay}
     </>
   );
