@@ -1,0 +1,219 @@
+{
+    "name": "All GaSa techniques",
+    "copyrights": "DeGaSa - Marta Mucha-Balcerek",
+    "email": "kontakt@martamucha.pl",
+    "techniquesForGasaAreas": [
+        {
+          "id": "gasa-technique-0",
+          "areaName": "CHEST",
+          "techniques": 
+          [
+            {
+                "techniqueName": "CHEST_V",
+                "techniqueTitle": "ruch V",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "CHEST_OPEN_BOOK",
+                "techniqueTitle": "otwieranie ksiązki",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "CHEST_X",
+                "techniqueTitle": "ruch X",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            }
+        ]
+        },
+        {
+          "id": "gasa-technique-1",
+          "areaName": "THORACIC_LIMB",
+         "techniques": 
+         [
+            {
+                "techniqueName": "THORACIC_LIMB_PAT",
+                "techniqueTitle": "przegłaskanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "THORACIC_LIMB_ROLLING",
+                "techniqueTitle": "wałkowanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "THORACIC_LIMB_ROCKING",
+                "techniqueTitle": "kołysanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "THORACIC_LIMB_PAW_PAT",
+                "techniqueTitle": "przegłaskanie części dłoniowej",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "THORACIC_LIMB_PAW_MASSAGE",
+                "techniqueTitle": "rozmasowanie części dłoniowej",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            }
+          ]
+        },
+        {
+          "id": "gasa-technique-2",
+          "areaName": "BELLY",
+          "techniques": [
+            {
+                "techniqueName": "BELLY_PAT",
+                "techniqueTitle": "przegłaskanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "BELLY_I_LOVE_YOU",
+                "techniqueTitle": "I Love You",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "BELLY_CIRCLE",
+                "techniqueTitle": "ruch okręzny",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "BELLY_Z",
+                "techniqueTitle": "ruch Z (przedramię/kciuk)",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "BELLY_PAT_WITH_FOREARM",
+                "techniqueTitle": "przegłaskanie (przedramię/kciuk)",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            }
+          ]
+        },
+        {
+          "id": "gasa-technique-3",
+          "areaName": "SIDE_OF_THE_BODY_AND_TAIL",
+          "techniques": [
+            {
+                "techniqueName": "SIDE_PAT",
+                "techniqueTitle": "przegłaskanie wzdłuz",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "SIDE_OPEN_BOOK",
+                "techniqueTitle": "otwieranie ksiązki",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "SIDE_BETWEEN_RIBS",
+                "techniqueTitle": "przegłaskanie między zebrami",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "SIDE_V",
+                "techniqueTitle": "ruch V nad kręgosłupem",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "TAIL_PAT",
+                "techniqueTitle": "przegłaskanie ogona",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "TAIL_PULL",
+                "techniqueTitle": "pociągnięcie ogona",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            }
+          ]
+        },
+        {
+          "id": "gasa-technique-4",
+          "areaName": "MUZZLE",
+          "techniques": [
+            {
+                "techniqueName": "MUZZLE_NECK",
+                "techniqueTitle": "przegłaskanie podbródka i szyi",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "MUZZLE_ENFOLD",
+                "techniqueTitle": "otulanie pyska",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "MUZZLE_CIRCLE",
+                "techniqueTitle": "ruchy okręzne na głowie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "MUZZLE_EAR_PAT",
+                "techniqueTitle": "przeglaskanie ucha",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "MUZZLE_EAR_CIRCLE",
+                "techniqueTitle": "ruchy koliste na koniuszku ucha",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "MUZZLE_EAR_CIRCLE_ALL",
+                "techniqueTitle": "ruchy koliste nasadą ucha",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            }
+          ]
+        },
+        {
+          "id": "gasa-technique-5",
+          "areaName": "PELVIC_LIMB",
+          "techniques": [
+            {
+                "techniqueName": "PELVIC_LIMB_PAT",
+                "techniqueTitle": "przegłaskanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "PELVIC_LIMB_ROLLING",
+                "techniqueTitle": "wałkowanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "PELVIC_LIMB_ROCKING",
+                "techniqueTitle": "kołysanie",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            },
+            {
+                "techniqueName": "PELVIC_LIMB_PAW",
+                "techniqueTitle": "przegłaskanie stopy",
+                "techniqueDecription": "",
+                "techniqueImg": ""
+            }
+          ]
+        }
+      ]
+}
