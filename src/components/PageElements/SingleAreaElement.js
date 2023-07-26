@@ -10,10 +10,13 @@ const SingleAreaElement = (area) => {
   ));
 
   return (
-    <>
-      <div>{`obszar: ${area.area.areaName}`} <PointHandWithWristband/></div>
+    <section className="techniques-for-body-area-section">
+      <header className="body-area-title">
+        <h3>{area.area.areaTitle}</h3>
+        <PointHandWithWristband/>
+        </header>
       {areaTechniquesToDisplay}
-    </>
+    </section>
   );
 };
 

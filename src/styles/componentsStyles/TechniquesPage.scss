@@ -5,6 +5,15 @@
         @include section-header($base-pink, $base-black-font, 1px solid $base-black-font);
     }
 
+    .techniques-for-body-area-section {
+        .body-area-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+    }
+
     img {
         max-width: 380px;
     }
