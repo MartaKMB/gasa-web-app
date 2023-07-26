@@ -12,7 +12,7 @@
 
     .welcome-dashboard-section {
         &__hello-txt {
-            font-size: 2em;
+            font-size: $big-font-title-size;
         }
         &__app-description-txt {
             text-align: center;
@@ -29,11 +29,8 @@
         margin-bottom: 1em;
 
         &__rules-title {
-            background-color: $base-baige;
-            color: $base-orange;
-            padding: 0.5em;
-            border-bottom-right-radius: $base-border-radius;
-            border-bottom-left-radius: $base-border-radius;
+            @include section-header($base-baige, $base-orange);
+
         }
 
         li {

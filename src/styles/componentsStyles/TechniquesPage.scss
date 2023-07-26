@@ -1,3 +1,15 @@
+.all-techniques-container {
+    @include page-container;
+
+    .all-techniques-title {
+        @include section-header($base-pink, $base-black-font, 1px solid $base-black-font);
+    }
+
+    img {
+        max-width: 380px;
+    }
+}
+
 .point-hand-wrist-container {
     height: 60px;
     transform: rotate(-90deg);

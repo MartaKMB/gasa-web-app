@@ -82,4 +82,18 @@ $base-border-radius: 15px;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  margin: 0 auto 0;
+}
+
+@mixin section-header($bck-color, $txt-color, $border-declaration: none) {
+  text-align: center;
+  font-size: $medium-font-title-size;
+  background-color: $bck-color;
+  color: $txt-color;
+  padding: 0.5em;
+  border-bottom-right-radius: $base-border-radius;
+  border-bottom-left-radius: $base-border-radius;
+  border: $border-declaration;
+  border-top-style: none;
+  margin-bottom: 1em;
 }

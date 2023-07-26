@@ -30,7 +30,7 @@ const AllTechniquesPage = () => {
 
   return (
     <section className="all-techniques-container">
-      <header>WSZYSTKIE TECHNIKI</header>
+      <header className="all-techniques-title">WSZYSTKIE TECHNIKI</header>
       {gasaAreaElementsToDisplay}
     </section>
   );

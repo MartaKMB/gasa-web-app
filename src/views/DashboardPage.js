@@ -47,7 +47,7 @@ const DashboardPage = () => {
         </ul>
       </section>
       <footer className="anchor-dashboard-section">
-        <a href="">ANKIETA - pomóż ulepszyć aplikację</a>
+        <a href="https://martamucha.pl/">ANKIETA - pomóż ulepszyć aplikację</a>
       </footer>
     </section>
   );
