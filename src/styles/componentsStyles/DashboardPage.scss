@@ -1,8 +1,8 @@
-.dashboard-page {
+.dashboard-page-container {
     @include page-container;
     
-    &__welcome-dashboard-section,
-    &__rules-dashboard-section {
+    .welcome-dashboard-section,
+    .rules-dashboard-section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -39,5 +39,9 @@
         li {
             padding-bottom: 0.25em;
         }
+    }
+
+    .anchor-dashboard-section {
+        text-align: center;
     }
 }

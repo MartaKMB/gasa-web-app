@@ -1,4 +1,4 @@
-.login-page {
+.login-page-container {
     @include page-container;
 
     .form-section {
@@ -9,6 +9,7 @@
         max-height: calc(100% - 200px);
         height: 60%;
         width: 100%;
+        padding-top: 2em;
 
         &__form-element {
             display: flex;

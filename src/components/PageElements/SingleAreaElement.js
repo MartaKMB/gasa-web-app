@@ -5,7 +5,6 @@ const SingleAreaElement = (area) => {
   const areaTechniquesToDisplay = area.area.techniques.map((technique) => (
     <SingleTechniqueElement
       areaTechnique={technique}
-      // areaImg={}
       key={`${area.area.name}-${area.area.techniques.indexOf(technique)}`}
     />
   ));

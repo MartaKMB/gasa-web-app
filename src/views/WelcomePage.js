@@ -5,18 +5,20 @@ import ButtonComponent from "../components/ButtonComponent";
 import WelcomeTxtComponent from "../components/WelcomeTxtComponent";
 
 const WelcomePage = () => {
-    let navigate = useNavigate();
-    const handleOnClickGoToLogin = () => navigate('/dashboard');
+  let navigate = useNavigate();
+  const handleOnClickGoToLogin = () => navigate("/dashboard");
 
-    return (
-        <div className="welcome-page">
-            <section className="welcome-page__container">
-                <DogHead />
-                <WelcomeTxtComponent />
-                <ButtonComponent name='przejdź do aplikacji' handleOnClick={handleOnClickGoToLogin} withPulse />
-            </section>
-        </div>
-    )
-}
+  return (
+    <section className="welcome-page-container">
+      <DogHead />
+      <WelcomeTxtComponent />
+      <ButtonComponent
+        name="przejdź do aplikacji"
+        handleOnClick={handleOnClickGoToLogin}
+        withPulse
+      />
+    </section>
+  );
+};
 
 export default WelcomePage;

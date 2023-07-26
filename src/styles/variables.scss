@@ -1,76 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap");
 
-$base-font-family: 'Lato', sans-serif;
+$base-font-family: "Lato", sans-serif;
 
 $small-font-title-size: 1.2em;
 $medium-font-title-size: 1.3em;
 $big-font-title-size: 2em;
 
-$base-black-font: #2B2B2B;
-$base-yellow: #F0AF02;
-$base-green: #63B76A;
-$base-light-blue: #7CC7BD;
-$base-blue: #3E9B9B;
-$base-pink: #F8AFB2;
-$base-orange: #D45715;
-$base-baige: #F6E8CC;
+$base-black-font: #2b2b2b;
+$base-yellow: #f0af02;
+$base-green: #63b76a;
+$base-light-blue: #7cc7bd;
+$base-blue: #3e9b9b;
+$base-pink: #f8afb2;
+$base-orange: #d45715;
+$base-baige: #f6e8cc;
 
-$light-yellow: #FCF1DA;
+$light-yellow: #fcf1da;
 
-$rgba-base-green: rgba(99, 183, 106, .6);
+$rgba-base-green: rgba(99, 183, 106, 0.6);
 
 $base-border-radius: 15px;
 
 @keyframes wiggle {
-    0% {
-        transform: rotate(-.2deg);
-    }
+  0% {
+    transform: rotate(-0.2deg);
+  }
 
-    20% {
-        transform: rotate(0.1deg);
-    }
+  20% {
+    transform: rotate(0.1deg);
+  }
 
-    40% {
-        transform: rotate(-.2deg);
-    }
+  40% {
+    transform: rotate(-0.2deg);
+  }
 
-    60% {
-        transform: rotate(0.1deg);
-    }
+  60% {
+    transform: rotate(0.1deg);
+  }
 
-    90% {
-        transform: rotate(-.2deg);
-    }
+  90% {
+    transform: rotate(-0.2deg);
+  }
 
-    100% {
-        transform: rotate(0);
-    }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-
 @mixin page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__container {
-        width: 95%;
-        max-width: 400px;
-        padding: 3em 2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  width: 95%;
+  max-width: 400px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }

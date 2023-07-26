@@ -18,13 +18,13 @@
                 "techniqueName": "CHEST_OPEN_BOOK",
                 "techniqueTitle": "otwieranie ksiązki",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/CHEST_OPEN_BOOK.png"
             },
             {
                 "techniqueName": "CHEST_X",
                 "techniqueTitle": "ruch X",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/CHEST_X.png"
             }
         ]
         },
@@ -37,31 +37,31 @@
                 "techniqueName": "THORACIC_LIMB_PAT",
                 "techniqueTitle": "przegłaskanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/THORACIC_LIMB_PAT.png"
             },
             {
                 "techniqueName": "THORACIC_LIMB_ROLLING",
                 "techniqueTitle": "wałkowanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/THORACIC_LIMB_ROLLING.png"
             },
             {
                 "techniqueName": "THORACIC_LIMB_ROCKING",
                 "techniqueTitle": "kołysanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/THORACIC_LIMB_ROCKING.png"
             },
             {
                 "techniqueName": "THORACIC_LIMB_PAW_PAT",
                 "techniqueTitle": "przegłaskanie części dłoniowej",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/THORACIC_LIMB_PAW_PAT.png"
             },
             {
                 "techniqueName": "THORACIC_LIMB_PAW_MASSAGE",
                 "techniqueTitle": "rozmasowanie części dłoniowej",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/THORACIC_LIMB_PAW_MASSAGE.png"
             }
           ]
         },
@@ -73,31 +73,31 @@
                 "techniqueName": "BELLY_PAT",
                 "techniqueTitle": "przegłaskanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/BELLY_PAT.png"
             },
             {
                 "techniqueName": "BELLY_I_LOVE_YOU",
                 "techniqueTitle": "I Love You",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/BELLY_I_LOVE_YOU.png"
             },
             {
                 "techniqueName": "BELLY_CIRCLE",
                 "techniqueTitle": "ruch okręzny",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/BELLY_CIRCLE.png"
             },
             {
                 "techniqueName": "BELLY_Z",
                 "techniqueTitle": "ruch Z (przedramię/kciuk)",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/BELLY_Z.png"
             },
             {
                 "techniqueName": "BELLY_PAT_WITH_FOREARM",
                 "techniqueTitle": "przegłaskanie (przedramię/kciuk)",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/BELLY_PAT_WITH_FOREARM.png"
             }
           ]
         },
@@ -109,37 +109,37 @@
                 "techniqueName": "SIDE_PAT",
                 "techniqueTitle": "przegłaskanie wzdłuz",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/SIDE_PAT.png"
             },
             {
                 "techniqueName": "SIDE_OPEN_BOOK",
                 "techniqueTitle": "otwieranie ksiązki",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/SIDE_OPEN_BOOK.png"
             },
             {
                 "techniqueName": "SIDE_BETWEEN_RIBS",
                 "techniqueTitle": "przegłaskanie między zebrami",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/SIDE_BETWEEN_RIBS.png"
             },
             {
                 "techniqueName": "SIDE_V",
                 "techniqueTitle": "ruch V nad kręgosłupem",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/SIDE_V.png"
             },
             {
                 "techniqueName": "TAIL_PAT",
                 "techniqueTitle": "przegłaskanie ogona",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/TAIL_PAT.png"
             },
             {
                 "techniqueName": "TAIL_PULL",
                 "techniqueTitle": "pociągnięcie ogona",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/TAIL_PULL.png"
             }
           ]
         },
@@ -151,37 +151,37 @@
                 "techniqueName": "MUZZLE_NECK",
                 "techniqueTitle": "przegłaskanie podbródka i szyi",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/MUZZLE_NECK.png"
             },
             {
                 "techniqueName": "MUZZLE_ENFOLD",
                 "techniqueTitle": "otulanie pyska",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/MUZZLE_ENFOLD.png"
             },
             {
                 "techniqueName": "MUZZLE_CIRCLE",
                 "techniqueTitle": "ruchy okręzne na głowie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/MUZZLE_CIRCLE.png"
             },
             {
                 "techniqueName": "MUZZLE_EAR_PAT",
                 "techniqueTitle": "przeglaskanie ucha",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/MUZZLE_EAR_PAT.png"
             },
             {
                 "techniqueName": "MUZZLE_EAR_CIRCLE",
                 "techniqueTitle": "ruchy koliste na koniuszku ucha",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/MUZZLE_EAR_CIRCLE.png"
             },
             {
                 "techniqueName": "MUZZLE_EAR_CIRCLE_ALL",
                 "techniqueTitle": "ruchy koliste nasadą ucha",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/MUZZLE_EAR_CIRCLE_ALL.png"
             }
           ]
         },
@@ -193,25 +193,25 @@
                 "techniqueName": "PELVIC_LIMB_PAT",
                 "techniqueTitle": "przegłaskanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/PELVIC_LIMB_PAT.png"
             },
             {
                 "techniqueName": "PELVIC_LIMB_ROLLING",
                 "techniqueTitle": "wałkowanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/PELVIC_LIMB_ROLLING.png"
             },
             {
                 "techniqueName": "PELVIC_LIMB_ROCKING",
                 "techniqueTitle": "kołysanie",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/PELVIC_LIMB_ROCKING.png"
             },
             {
                 "techniqueName": "PELVIC_LIMB_PAW",
                 "techniqueTitle": "przegłaskanie stopy",
                 "techniqueDecription": "",
-                "techniqueImg": ""
+                "techniqueImg": "gasa-app-images/PELVIC_LIMB_PAW.png"
             }
           ]
         }

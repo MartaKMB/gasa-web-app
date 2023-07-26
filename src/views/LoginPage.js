@@ -1,8 +1,9 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import WelcomeTxtComponent from "../components/WelcomeTxtComponent";
 import ButtonComponent from "../components/ButtonComponent";
 import WrongDataMessageComponent from "../components/WrongDataMessageComponent";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const PASSWORD = 'test123';
 
@@ -52,12 +53,11 @@ const LoginPage = () => {
     const wrongPasswordComponent = !isPasswordValid ? <WrongDataMessageComponent messageTxt={wrongPasswordTxt} /> : null;
 
     return (
-        <div className='login-page'>
-            <section className='login-page__container'>
+        <section className='login-page-container'>
                 <WelcomeTxtComponent onlyTitle />
                 {wrongEmailComponent}
                 {wrongPasswordComponent}
-                <form className='login-page__form-section form-section' onSubmit={handleOnSubmitLogin}>
+                <form className='form-section' onSubmit={handleOnSubmitLogin}>
                     <div className='form-section__form-element'>
                         <label>Twoje imię:
                             <input type='text' id='userName' name='userName' placeholder='...' onChange={e => setUserNameInput(e.target.value)} value={userNameInput} />
@@ -75,8 +75,7 @@ const LoginPage = () => {
                     </div>
                     <ButtonComponent name='zaloguj' handleOnClick={handleOnSubmitLogin} />
                 </form>
-            </section>
-        </div>
+        </section>
     )
 }
 

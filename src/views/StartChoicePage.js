@@ -29,8 +29,7 @@ const StartChoicePage = () => {
   };
 
   return (
-    <div className="choice-page">
-      <section className="choice-page__container">
+      <section className="choice-page-container">
         <header className="start-choice-page-header">
           <RoundedPointHand />
           <h2 className="start-choice-page-header__choice-title">
@@ -69,7 +68,6 @@ const StartChoicePage = () => {
           />
         </section>
       </section>
-    </div>
   );
 };
 
