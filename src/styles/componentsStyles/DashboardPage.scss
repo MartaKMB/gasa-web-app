@@ -1,44 +1,44 @@
 .dashboard-page-container {
-    @include page-container;
-    
-    .welcome-dashboard-section,
-    .rules-dashboard-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 35%;
+  @include page-container;
+
+  .welcome-dashboard-section,
+  .rules-dashboard-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35%;
+  }
+
+  .welcome-dashboard-section {
+    &__hello-txt {
+      font-size: $big-font-title-size;
     }
 
-    .welcome-dashboard-section {
-        &__hello-txt {
-            font-size: $big-font-title-size;
-        }
-        &__app-description-txt {
-            text-align: center;
-            padding-top: 1em;
-        }
+    &__app-description-txt {
+      text-align: center;
+      padding-top: 1em;
+    }
+  }
+
+  .rules-dashboard-section {
+    border-radius: $base-border-radius;
+    background-color: $base-orange;
+    padding: 0 2em 1em;
+    color: $base-baige;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+    &__rules-title {
+      @include section-header($base-baige, $base-orange);
     }
 
-    .rules-dashboard-section {
-        border-radius: $base-border-radius;
-        background-color: $base-orange;
-        padding: 0 2em 1em;
-        color: $base-baige;
-        font-weight: bold;
-        margin-bottom: 1em;
-
-        &__rules-title {
-            @include section-header($base-baige, $base-orange);
-
-        }
-
-        li {
-            padding-bottom: 0.25em;
-        }
+    li {
+      padding-bottom: 0.25em;
     }
+  }
 
-    .anchor-dashboard-section {
-        text-align: center;
-    }
+  .anchor-dashboard-section {
+    text-align: center;
+  }
 }
