@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import { setNameAction, setPermissionAction } from '../redux/userSlice';
+import { setNameAction, setPermissionAction } from '../store/userSlice';
 
 import WelcomeTxtComponent from '../components/WelcomeTxtComponent';
 import ButtonComponent from '../components/ButtonComponent';

@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import SingleAreaElement from "../components/PageElements/SingleAreaElement";
+import SingleAreaElement from '../components/PageElements/SingleAreaElement';
 
 const AllTechniquesPage = () => {
   const [gasaData, setGasaData] = useState(null);
 
   const getTechniquesData = () => {
-    fetch("gasa-app-data/gasa-techniques.json")
+    fetch('gasa-app-data/gasa-techniques.json')
       .then((response) => {
         return response.json();
       })
@@ -29,8 +29,8 @@ const AllTechniquesPage = () => {
     ));
 
   return (
-    <section className="all-techniques-container">
-      <header className="all-techniques-title">WSZYSTKIE TECHNIKI</header>
+    <section className='all-techniques-container'>
+      <header className='all-techniques-title'>WSZYSTKIE TECHNIKI</header>
       {gasaAreaElementsToDisplay}
     </section>
   );

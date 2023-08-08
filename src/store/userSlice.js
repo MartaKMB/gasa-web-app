@@ -1,10 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const userNameWithPermission = JSON.parse(
+  localStorage.getItem('userNameWithPermission')
+);
+
+const hasUserPermission = JSON.parse(localStorage.getItem('hasUserPermission'));
+
 export const userSlice = createSlice({
   name: 'userData',
   initialState: {
-    userName: JSON.parse(localStorage.getItem('userNameWithPermission')) || '',
-    userPermission: localStorage.getItem('hasUserPermission') || false,
+    userName: userNameWithPermission || '',
+    userPermission: hasUserPermission || false,
   },
   reducers: {
     setNameAction: (state, action) => {
@@ -15,7 +21,7 @@ export const userSlice = createSlice({
       state.userName = action.payload;
     },
     setPermissionAction: (state) => {
-      localStorage.setItem('hasUserPermission', JSON.stringify(true));
+      localStorage.setItem('hasUserPermission', true);
       state.userPermission = true;
     },
   },

@@ -11,9 +11,11 @@
 @import './componentsStyles/WrongDataMessageComponent';
 
 // views
-@import './componentsStyles/App';
-@import './componentsStyles/WelcomePage';
-@import './componentsStyles/LoginPage';
-@import './componentsStyles/DashboardPage';
-@import './componentsStyles/ChoicePage';
-@import './componentsStyles/TechniquesPage';
+@import './viewsStyles/App';
+@import './viewsStyles/WelcomePage';
+@import './viewsStyles/LoginPage';
+@import './viewsStyles/DashboardPage';
+@import './viewsStyles/ChoicePage';
+@import './viewsStyles/TechniquesPage';
+
+// TODO kompilacja tylko do jednego pliku css, czyli nazwy z _przedNazwą
