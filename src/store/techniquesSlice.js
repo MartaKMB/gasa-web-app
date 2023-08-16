@@ -1,5 +1,3 @@
-// https://www.youtube.com/watch?v=93CR_yURoII
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
