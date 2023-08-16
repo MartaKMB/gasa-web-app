@@ -14,6 +14,7 @@ const StartChoicePage = () => {
     'FIRST_TOUCH',
     'ALL_TECHNIQUES',
   ];
+
   let navigate = useNavigate();
 
   const handleOnChoice = (e, ownerChoice) => {
