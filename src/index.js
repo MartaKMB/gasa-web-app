@@ -5,6 +5,9 @@ import { Provider } from 'react-redux';
 import './styles/index.scss';
 import App from './App';
 import store from './store/store';
+import { fetchTechniques } from './store/techniquesSlice';
+
+store.dispatch(fetchTechniques());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
