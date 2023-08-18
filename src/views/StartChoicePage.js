@@ -24,6 +24,8 @@ const StartChoicePage = () => {
         navigate('/all-techniques');
         break;
       case 'DOG_CHOICE':
+        navigate('/choice-body-techniques');
+        break;
       case 'NO_TOUCH':
       case 'FIRST_TOUCH':
         console.log('klik w: ', ownerChoice);

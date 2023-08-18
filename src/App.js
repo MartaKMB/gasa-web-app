@@ -7,19 +7,49 @@ import WelcomePage from './views/WelcomePage';
 import DashboardPage from './views/DashboardPage';
 import StartChoicePage from './views/StartChoicePage';
 import AllTechniquesPage from './views/AllTechniquesPage';
+import BodyPartChoicePage from './views/BodyPartChoicePage';
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="gasa-web-app-container">
+      <div className='gasa-web-app-container'>
         <Routes>
-          <Route path="/" exact element={<WelcomePage />} />
+          <Route path='/' exact element={<WelcomePage />} />
           {/* <Route path="news" element={<News />} /> */}
           {/* <Route path="contact" element={<Contact />} /> */}
-          <Route path="login" element={<LoginPage />} />
-          <Route path="dashboard" element={<PrivateRoute><DashboardPage/></PrivateRoute>} />
-          <Route path="choice" element={<PrivateRoute><StartChoicePage/></PrivateRoute>} />
-          <Route path="all-techniques" element={<PrivateRoute><AllTechniquesPage/></PrivateRoute>} />
+          <Route path='login' element={<LoginPage />} />
+          <Route
+            path='dashboard'
+            element={
+              <PrivateRoute>
+                <DashboardPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path='choice'
+            element={
+              <PrivateRoute>
+                <StartChoicePage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path='choice-body-techniques'
+            element={
+              <PrivateRoute>
+                <BodyPartChoicePage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path='all-techniques'
+            element={
+              <PrivateRoute>
+                <AllTechniquesPage />
+              </PrivateRoute>
+            }
+          />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>

@@ -57,4 +57,6 @@ const techniquesSlice = createSlice({
 
 export const selectAllTechniques = (state) => state.techniques;
 
+// https://www.youtube.com/watch?v=-f1iAsrkyB0 - select single post, 3 minute
+
 export default techniquesSlice.reducer;
