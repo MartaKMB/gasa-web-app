@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
-$base-font-family: "Lato", sans-serif;
+$base-font-family: 'Lato', sans-serif;
 
 $small-font-title-size: 1.2em;
 $medium-font-title-size: 1.3em;
@@ -96,4 +96,5 @@ $base-border-radius: 15px;
   border: $border-declaration;
   border-top-style: none;
   margin-bottom: 1em;
+  text-transform: uppercase;
 }

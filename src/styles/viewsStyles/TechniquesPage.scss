@@ -1,27 +1,51 @@
-.all-techniques-container {
-    @include page-container;
+.all-techniques-container,
+.body-choice-techniques-container {
+  @include page-container;
 
-    .all-techniques-title {
-        @include section-header($base-pink, $base-black-font, 1px solid $base-black-font);
-    }
+  .all-techniques-title,
+  .body-choice-techniques-title {
+    @include section-header(
+      $base-pink,
+      $base-black-font,
+      1px solid $base-black-font
+    );
+    transform: translate(0, -29px);
+    width: 85%;
+    align-self: center;
+  }
 
-    .techniques-for-body-area-section {
-        .body-area-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-transform: uppercase;
-        }
-    }
+  .body-choice-techniques-buttons-section {
+    &--after-choice {
+      transform: translate(0, -30px);
+      align-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 0.75em;
 
-    img {
-        max-width: 380px;
+      .gasa-app-button {
+        font-size: small;
+      }
     }
+  }
+
+  .techniques-for-body-area-section {
+    .body-area-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+    }
+  }
+
+  img {
+    max-width: 380px;
+  }
 }
 
 .point-hand-wrist-container {
-    height: 60px;
-    transform: rotate(-90deg) scale(1, -1);
+  height: 60px;
+  transform: rotate(-90deg) scale(1, -1);
 }
 
 // .block-with-faq {
@@ -29,7 +53,7 @@
 //       position: absolute;
 //       opacity: 0;
 //       z-index: -1;
-  
+
 //       &:checked {
 //         + .tab__label {
 //           &::after {
@@ -42,17 +66,17 @@
 //         }
 //       }
 //     }
-  
+
 //     &__faq-tabs {
 //       border-radius: 5px;
 //       overflow: hidden;
 //     }
-  
+
 //     .tab {
 //       width: 100%;
 //       color: white;
 //       overflow: hidden;
-      
+
 //       &__label {
 //         display: flex;
 //         justify-content: space-between;
@@ -60,17 +84,17 @@
 //         background: green;
 //         font-weight: bold;
 //         cursor: pointer;
-  
+
 //         &::after {
 //           content: "";
-//         //   background: left center / 3.5rem 1rem no-repeat url(../img/komponent-palec.png); 
+//         //   background: left center / 3.5rem 1rem no-repeat url(../img/komponent-palec.png);
 //           width: 3.5rem;
 //           height: 1rem;
 //           text-align: center;
 //           transition: all .35s;
 //         }
 //       }
-  
+
 //       &__content {
 //         max-height: 0;
 //         padding: 0 1em;

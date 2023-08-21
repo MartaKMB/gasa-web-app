@@ -1,7 +1,14 @@
-const ButtonComponent = ({ name, handleOnClick, withPulse }) => {
-    return (
-        <button className={`gasa-app-button ${withPulse && 'gasa-app-button--with-pulse'}`} onClick={handleOnClick}>{name}</button>
-    )
-}
+const ButtonComponent = ({ name, handleOnClick, withPulse, invisible }) => {
+  return (
+    <button
+      className={`gasa-app-button ${
+        withPulse && 'gasa-app-button--with-pulse'
+      } ${invisible && 'gasa-app-button--invisible'}`}
+      onClick={handleOnClick}
+    >
+      {name}
+    </button>
+  );
+};
 
 export default ButtonComponent;
