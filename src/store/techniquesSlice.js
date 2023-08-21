@@ -57,6 +57,16 @@ const techniquesSlice = createSlice({
 
 export const selectAllTechniques = (state) => state.techniques;
 
-// https://www.youtube.com/watch?v=-f1iAsrkyB0 - select single post, 3 minute
+export const selectTechniquesByBodyPartName = (state, choosenAreaName) => {
+  console.log(
+    'select, choosen: ',
+    state.techniques.techniquesForGasaAreas.find(
+      (areaTechnique) => areaTechnique.areaName === choosenAreaName
+    )
+  );
+  return state.techniques.techniquesForGasaAreas.find(
+    (area) => area.areaName === choosenAreaName
+  );
+};
 
 export default techniquesSlice.reducer;

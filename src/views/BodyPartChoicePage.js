@@ -1,18 +1,37 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import LyingDog from '../assets/svgImages/LyingDog';
 import ButtonComponent from '../components/ButtonComponent';
+import SingleTechniqueElement from '../components/PageElements/SingleTechniqueElement';
+import { selectTechniquesByBodyPartName } from '../store/techniquesSlice';
 
 const BodyPartChoicePage = () => {
   const [isBodyPartChoosen, setIsBodyPartChoosen] = useState(false);
   const [choosenBodyPart, setChoosenBodyPart] = useState('');
 
+  const choosenArea = useSelector((state) =>
+    selectTechniquesByBodyPartName(state, choosenBodyPart)
+  );
+
   const handleOnChoice = (e, dogChoice) => {
     e.preventDefault();
-    setIsBodyPartChoosen(true);
     setChoosenBodyPart(dogChoice);
+    setIsBodyPartChoosen(true);
     console.log('mój pies wybrał: ', dogChoice);
+    console.log('area w komponencie:', choosenArea);
   };
+
+  const areaTechniquesToDisplay =
+    choosenArea &&
+    choosenArea.techniques.map((technique) => (
+      <SingleTechniqueElement
+        areaTechnique={technique}
+        key={`${choosenArea.areaName}-${choosenArea.techniques.indexOf(
+          technique
+        )}`}
+      />
+    ));
 
   return (
     <section className='body-choice-techniques-container'>
@@ -29,34 +48,40 @@ const BodyPartChoicePage = () => {
       >
         <ButtonComponent
           name='bok ciała'
-          invisible={isBodyPartChoosen && choosenBodyPart === 'sideOfTheBody'}
-          handleOnClick={(e) => handleOnChoice(e, 'sideOfTheBody')}
+          invisible={
+            isBodyPartChoosen && choosenBodyPart === 'SIDE_OF_THE_BODY_AND_TAIL'
+          }
+          handleOnClick={(e) => handleOnChoice(e, 'SIDE_OF_THE_BODY_AND_TAIL')}
         />
         <ButtonComponent
           name='pysk'
-          invisible={isBodyPartChoosen && choosenBodyPart === 'muzzle'}
-          handleOnClick={(e) => handleOnChoice(e, 'muzzle')}
+          invisible={isBodyPartChoosen && choosenBodyPart === 'MUZZLE'}
+          handleOnClick={(e) => handleOnChoice(e, 'MUZZLE')}
         />
         <ButtonComponent
           name='klatka piersiowa'
-          invisible={isBodyPartChoosen && choosenBodyPart === 'chest'}
-          handleOnClick={(e) => handleOnChoice(e, 'chest')}
+          invisible={isBodyPartChoosen && choosenBodyPart === 'CHEST'}
+          handleOnClick={(e) => handleOnChoice(e, 'CHEST')}
         />
         <ButtonComponent
           name='brzuch'
-          invisible={isBodyPartChoosen && choosenBodyPart === 'belly'}
-          handleOnClick={(e) => handleOnChoice(e, 'belly')}
+          invisible={isBodyPartChoosen && choosenBodyPart === 'BELLY'}
+          handleOnClick={(e) => handleOnChoice(e, 'BELLY')}
         />
         <ButtonComponent
           name='kończyna piersiowa'
-          invisible={isBodyPartChoosen && choosenBodyPart === 'thoracicLimb'}
-          handleOnClick={(e) => handleOnChoice(e, 'thoracicLimb')}
+          invisible={isBodyPartChoosen && choosenBodyPart === 'THORACIC_LIMB'}
+          handleOnClick={(e) => handleOnChoice(e, 'THORACIC_LIMB')}
         />
         <ButtonComponent
           name='kończyna miedniczna'
-          invisible={isBodyPartChoosen && choosenBodyPart === 'pelvicLimb'}
-          handleOnClick={(e) => handleOnChoice(e, 'pelvicLimb')}
+          invisible={isBodyPartChoosen && choosenBodyPart === 'PELVIC_LIMB'}
+          handleOnClick={(e) => handleOnChoice(e, 'PELVIC_LIMB')}
         />
+      </section>
+      <section className='choosen-body-part-techniques-section'>
+        {choosenArea ? choosenArea.areaTitle : ''}
+        {areaTechniquesToDisplay}
       </section>
     </section>
   );
