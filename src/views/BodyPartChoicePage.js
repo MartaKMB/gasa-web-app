@@ -36,13 +36,21 @@ const BodyPartChoicePage = () => {
   return (
     <section className='body-choice-techniques-container'>
       <LyingDog />
-      {!isBodyPartChoosen && (
-        <header className='body-choice-techniques-title'>
-          Co pokazuje Twój Pies? Do jakiego obszaru ciała masz dostęp?
+      <header className='body-choice-techniques-title'>
+        {!isBodyPartChoosen && !choosenArea
+          ? 'Co pokazuje Twój Pies? Do jakiego obszaru ciała masz dostęp'
+          : `${choosenArea.areaTitle}`}
+      </header>
+      <section className='choosen-body-part-techniques-section'>
+        {areaTechniquesToDisplay}
+      </section>
+      {isBodyPartChoosen && (
+        <header className='body-choice-techniques-title body-choice-techniques-title--after-choice'>
+          Co teraz? Co sugeruje Twój Pies?
         </header>
       )}
       <section
-        className={`body-choice-techniques-buttons-section${
+        className={`body-choice-techniques-buttons-section body-choice-techniques-buttons-section${
           isBodyPartChoosen && '--after-choice'
         }`}
       >
@@ -78,10 +86,6 @@ const BodyPartChoicePage = () => {
           invisible={isBodyPartChoosen && choosenBodyPart === 'PELVIC_LIMB'}
           handleOnClick={(e) => handleOnChoice(e, 'PELVIC_LIMB')}
         />
-      </section>
-      <section className='choosen-body-part-techniques-section'>
-        {choosenArea ? choosenArea.areaTitle : ''}
-        {areaTechniquesToDisplay}
       </section>
     </section>
   );

@@ -12,11 +12,19 @@
     transform: translate(0, -29px);
     width: 85%;
     align-self: center;
+
+    &--after-choice {
+      transform: translate(0, 0);
+      margin-bottom: 0;
+    }
+  }
+
+  .choosen-body-part-techniques-section {
+    border-bottom: 1px solid $base-black-font;
   }
 
   .body-choice-techniques-buttons-section {
     &--after-choice {
-      transform: translate(0, -30px);
       align-self: center;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -38,8 +46,28 @@
     }
   }
 
-  img {
-    max-width: 380px;
+  .single-technique-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 1em;
+    margin-bottom: 1em;
+    border: 1px solid $base-black-font;
+    border-radius: $base-border-radius;
+
+    &__technique-title {
+      text-transform: uppercase;
+      font-size: $medium-font-title-size;
+      text-align: center;
+    }
+
+    &__technique-image {
+      height: auto;
+      max-height: 200px;
+      max-width: 100%;
+      margin: 1em 0;
+    }
   }
 }
 
