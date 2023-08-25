@@ -1,9 +1,11 @@
 .all-techniques-container,
-.body-choice-techniques-container {
+.body-choice-techniques-container,
+.no-touch-techniques-container {
   @include page-container;
 
   .all-techniques-title,
-  .body-choice-techniques-title {
+  .body-choice-techniques-title,
+  .no-touch-title {
     @include section-header(
       $base-pink,
       $base-black-font,
@@ -38,8 +40,10 @@
     }
   }
 
-  .techniques-for-body-area-section {
-    .body-area-title {
+  .techniques-for-body-area-section,
+  .info-area-section {
+    .body-area-title,
+    .info-area-title {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -47,7 +51,8 @@
     }
   }
 
-  .single-technique-element {
+  .single-technique-element,
+  .no-touch-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,6 +73,15 @@
       max-height: 200px;
       max-width: 100%;
       margin: 1em 0;
+    }
+
+    &__technique-txt {
+      padding: 1em;
+      line-height: 1.75;
+
+      p {
+        padding-bottom: 0.75em;
+      }
     }
   }
 }

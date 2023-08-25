@@ -27,6 +27,8 @@ const StartChoicePage = () => {
         navigate('/choice-body-techniques');
         break;
       case 'NO_TOUCH':
+        navigate('/no-touch-techniques');
+        break;
       case 'FIRST_TOUCH':
         console.log('klik w: ', ownerChoice);
         break;

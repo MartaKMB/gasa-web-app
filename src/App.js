@@ -8,6 +8,7 @@ import DashboardPage from './views/DashboardPage';
 import StartChoicePage from './views/StartChoicePage';
 import AllTechniquesPage from './views/AllTechniquesPage';
 import BodyPartChoicePage from './views/BodyPartChoicePage';
+import NoTouchPage from './views/NoTouchPage';
 
 function App() {
   return (
@@ -39,6 +40,14 @@ function App() {
             element={
               <PrivateRoute>
                 <BodyPartChoicePage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path='no-touch-techniques'
+            element={
+              <PrivateRoute>
+                <NoTouchPage />
               </PrivateRoute>
             }
           />
