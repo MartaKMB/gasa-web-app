@@ -86,6 +86,9 @@ const BodyPartChoicePage = () => {
           invisible={isBodyPartChoosen && choosenBodyPart === 'PELVIC_LIMB'}
           handleOnClick={(e) => handleOnChoice(e, 'PELVIC_LIMB')}
         />
+        {isBodyPartChoosen && (
+          <div className='body-choice-techniques-questionmark'>?</div>
+        )}
       </section>
     </section>
   );

@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import PointHandWithWristband from "../../assets/svgImages/PointHandWithWristband";
-import SingleTechniqueElement from "./SingleTechniqueElement";
+import PointHandWithWristband from '../../assets/svgImages/PointHandWithWristband';
+import SingleTechniqueElement from './SingleTechniqueElement';
 
 const SingleAreaElement = (area) => {
   const [isAreaChecked, setIsAreaChecked] = useState(false);
@@ -16,25 +16,24 @@ const SingleAreaElement = (area) => {
   ));
 
   return (
-    <section className="techniques-for-body-area-section">
-      <header className="body-area-title">
+    <section className='techniques-for-body-area-section'>
+      <header className='body-area-title'>
         <input
-          type="checkbox"
+          type='checkbox'
           id={area.area.id}
           value={area.area.id}
-          name="rd"
+          name='rd'
           onChange={handleAreaAsCheckboxClick}
           checked={isAreaChecked}
+          className='body-area-title__inbox'
         ></input>
 
-        <label className="WIP_tab__label" htmlFor={area.area.id}>
+        <label className='body-area-title__label' htmlFor={area.area.id}>
           {area.area.areaTitle}
+          <PointHandWithWristband />
         </label>
-        <PointHandWithWristband />
       </header>
-      <section>
-        {isAreaChecked ? areaTechniquesToDisplay : null}
-      </section>
+      <section>{isAreaChecked ? areaTechniquesToDisplay : null}</section>
     </section>
   );
 };

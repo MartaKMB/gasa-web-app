@@ -20,6 +20,7 @@
   }
 
   .choosen-body-part-techniques-section {
+    padding-bottom: 2em;
     border-bottom: 1px solid $base-black-font;
   }
 
@@ -71,64 +72,42 @@
   }
 }
 
+.body-choice-techniques-questionmark {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .point-hand-wrist-container {
   height: 60px;
   transform: rotate(-90deg) scale(1, -1);
+  transition: transform 0.5s ease-in-out;
 }
 
-// .block-with-faq {
-//     input {
-//       position: absolute;
-//       opacity: 0;
-//       z-index: -1;
+.body-area-title {
+  &__inbox {
+    display: none;
 
-//       &:checked {
-//         + .tab__label {
-//           &::after {
-//             transform: rotate(-35deg);
-//           }
-//         }
-//         ~ .tab__content {
-//           max-height: 100vh;
-//           padding: 1em;
-//         }
-//       }
-//     }
+    &:checked + .body-area-title__label > .point-hand-wrist-container {
+      transform: rotate(-135deg) scale(1, -1);
+    }
+  }
 
-//     &__faq-tabs {
-//       border-radius: 5px;
-//       overflow: hidden;
-//     }
+  &__label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 
-//     .tab {
-//       width: 100%;
-//       color: white;
-//       overflow: hidden;
+    &:hover {
+      font-weight: 700;
 
-//       &__label {
-//         display: flex;
-//         justify-content: space-between;
-//         padding: 1em;
-//         background: green;
-//         font-weight: bold;
-//         cursor: pointer;
-
-//         &::after {
-//           content: "";
-//         //   background: left center / 3.5rem 1rem no-repeat url(../img/komponent-palec.png);
-//           width: 3.5rem;
-//           height: 1rem;
-//           text-align: center;
-//           transition: all .35s;
-//         }
-//       }
-
-//       &__content {
-//         max-height: 0;
-//         padding: 0 1em;
-//         color: black;
-//         background: pink;
-//         transition: all .35s;
-//       }
-//     }
-// } // from gase book www
+      & .point-hand-wrist-container {
+        transform: rotate(-105deg) scale(1, -1);
+      }
+    }
+  }
+}
