@@ -1,0 +1,13 @@
+{
+  "name": "GaSa audio",
+  "copyrights": "© DeGaSa - Marta Mucha-Balcerek",
+  "email": "kontakt@martamucha.pl",
+  "audioForGasaPractices": [
+    {
+      "id": "gasa-audio-0",
+      "audioName": "NO_TOUCH",
+      "audioTitle": "praktyka prowadzona - sesja relaksu bez dotyku",
+      "audioMP3": "gasa-app-audio/no-touch-practice.mp3"
+    }
+  ]
+}

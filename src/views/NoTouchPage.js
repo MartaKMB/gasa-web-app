@@ -43,16 +43,16 @@ const NoTouchPage = () => {
       </section>
       <SingleInfoElement
         infoToDisplay={{
-          title: 'dedykowana karta praktyki',
+          title: 'karta praktyki',
           id: 1,
           txt: 'test',
         }}
       />
       <SingleInfoElement
         infoToDisplay={{
-          title: 'nagranie audio - praktyka prowadzona',
+          title: 'nagranie audio',
           id: 2,
-          txt: 'test',
+          txt: 'AUDIO',
         }}
       />
     </section>
