@@ -1,27 +1,28 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import useSound from 'use-sound'; // for handling the sound
-import { AiFillPlayCircle, AiFillPauseCircle } from 'react-icons/ai'; // icons for play and pause
-import { IconContext } from 'react-icons'; // for customazing the icons
+import useSound from 'use-sound';
+import {
+  AiFillPlayCircle,
+  AiFillPauseCircle,
+  AiFillQuestionCircle,
+} from 'react-icons/ai';
+import { IconContext } from 'react-icons';
 
-import { selectAudioByName } from '../store/audioSlice';
+import { selectAudioByName, fetchAudio } from '../store/audioSlice';
 import store from '../store/store';
-import { fetchAudio } from '../store/audioSlice';
 
 store.dispatch(fetchAudio());
 
+const timeObject = {
+  min: '?',
+  sec: '?',
+};
+
 const AudioPlayerComponent = (audioName) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [time, setTime] = useState({
-    min: '?',
-    sec: '?',
-  });
-  const [currTime, setCurrTime] = useState({
-    min: '?',
-    sec: '?',
-  });
-
-  const [seconds, setSeconds] = useState('');
+  const [time, setTime] = useState(timeObject);
+  const [currTime, setCurrTime] = useState(timeObject);
+  const [seconds, setSeconds] = useState(0);
 
   const choosenAudio = useSelector((state) =>
     selectAudioByName(state, audioName.audioName)
@@ -59,10 +60,10 @@ const AudioPlayerComponent = (audioName) => {
     return () => clearInterval(interval);
   }, [sound]);
 
-  const playingButton = () => {
+  const handlePlayBtn = () => {
     const ctx = new AudioContext();
     if (isPlaying) {
-      pause(); // this will pause the audio
+      pause();
       setIsPlaying(false);
     } else {
       if (ctx.state === 'running') {
@@ -73,18 +74,16 @@ const AudioPlayerComponent = (audioName) => {
   };
 
   return (
-    <div className='component'>
-      <img
-        className='musicCover'
-        alt='test'
-        src='https://picsum.photos/200/200'
-      />
+    <section className='gasa-app-audio-player'>
+      <div className='gasa-app-audio-player__img-cover'></div>
       <div>
-        <h2 className='title'>Sesja relaksu bez dotyku</h2>
-        <p className='subTitle'>Praktyka prowadzona</p>
+        <h2 className='gasa-app-audio-player__title'>
+          Sesja relaksu bez dotyku
+        </h2>
+        <p className='gasa-app-audio-player__subtitle'>Praktyka prowadzona</p>
       </div>
       <div>
-        <div className='time'>
+        <div className='gasa-app-audio-player__time'>
           <p>
             {currTime.min}:{currTime.sec}
           </p>
@@ -98,17 +97,20 @@ const AudioPlayerComponent = (audioName) => {
           max={duration / 1000}
           default='0'
           value={seconds}
-          className='timeline'
+          className='gasa-app-audio-player__time-line'
           onChange={(e) => {
             sound.seek([e.target.value]);
           }}
         />
       </div>
       <div>
-        <button className='playButton' onClick={playingButton}>
+        <button
+          className='gasa-app-audio-player__play-button'
+          onClick={handlePlayBtn}
+        >
           <IconContext.Provider value={{ size: '3em', color: '#27AE60' }}>
             {time.min === '?' ? (
-              <div>ładowanie</div>
+              <AiFillQuestionCircle />
             ) : !isPlaying ? (
               <AiFillPlayCircle />
             ) : (
@@ -117,7 +119,7 @@ const AudioPlayerComponent = (audioName) => {
           </IconContext.Provider>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

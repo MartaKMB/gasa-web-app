@@ -1,0 +1,103 @@
+.gasa-app-audio-player {
+  background-color: $light-baige;
+  max-width: 600px;
+  margin: 1em auto;
+  padding: 2em 0;
+  border: 0.1px solid $base-black-font;
+  border-radius: $base-border-radius;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img-cover {
+    max-width: 80%;
+    height: 300px;
+    min-width: 300px;
+    background: black;
+    overflow: hidden;
+    background: $rgba-base-pink;
+    background: linear-gradient($rgba-base-green, $rgba-base-pink),
+      url('../../assets/jpgImages/img-for-audio.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    border-radius: $base-border-radius;
+  }
+
+  &__title,
+  &__subtitle {
+    color: $base-black-font;
+  }
+
+  &__time {
+    margin: 0 auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: $base-green;
+    font-size: smaller;
+  }
+
+  &__time-line {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__play-button {
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type='range']:focus {
+    outline: none;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    background: $base-green;
+    height: 0.5rem;
+    border-radius: $base-border-radius;
+  }
+
+  input[type='range']::-moz-range-track {
+    background: $base-green;
+    height: 0.5rem;
+    border-radius: $base-border-radius;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -0.25em;
+    background-color: $base-green;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+  }
+
+  input[type='range']::-moz-range-thumb {
+    border: none;
+    border-radius: 0;
+    background-color: $base-green;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+  }
+
+  input[type='range']:focus::-webkit-slider-thumb {
+    border: 1px solid $base-orange;
+    outline: 1px solid $base-orange;
+    outline-offset: 0.1em;
+  }
+
+  input[type='range']:focus::-moz-range-thumb {
+    border: 1px solid $base-orange;
+    outline: 1px solid $base-orange;
+    outline-offset: 0.1em;
+  }
+}

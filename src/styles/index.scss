@@ -9,6 +9,7 @@
 @import './componentsStyles/ButtonComponent';
 @import './componentsStyles/WelcomeTxtComponent';
 @import './componentsStyles/WrongDataMessageComponent';
+@import './componentsStyles/AudioPlayerComponent';
 
 // views
 @import './viewsStyles/App';
@@ -17,5 +18,3 @@
 @import './viewsStyles/DashboardPage';
 @import './viewsStyles/ChoicePage';
 @import './viewsStyles/TechniquesPage';
-
-// TODO kompilacja tylko do jednego pliku css, czyli nazwy z _przedNazwą
