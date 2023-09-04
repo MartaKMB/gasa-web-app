@@ -8,7 +8,7 @@ import WelcomeTxtComponent from '../components/WelcomeTxtComponent';
 import ButtonComponent from '../components/ButtonComponent';
 import WrongDataMessageComponent from '../components/WrongDataMessageComponent';
 
-const PASSWORD = 'test123';
+const PASSWORD = 'gasa2023demo';
 
 const LoginPage = () => {
   const [userNameInput, setUserNameInput] = useState('');

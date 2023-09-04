@@ -45,7 +45,7 @@ const NoTouchPage = () => {
         infoToDisplay={{
           title: 'karta praktyki',
           id: 1,
-          txt: 'test',
+          txt: 'PDF',
         }}
       />
       <SingleInfoElement

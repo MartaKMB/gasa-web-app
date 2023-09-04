@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import PointHandWithWristband from '../../assets/svgImages/PointHandWithWristband';
 import AudioPlayerComponent from '../AudioPlayerComponent';
+import PdfComponent from '../PdfComponent';
 
 const SingleInfoElement = (infoToDisplay) => {
   const [isAreaChecked, setIsAreaChecked] = useState(false);
@@ -20,7 +21,6 @@ const SingleInfoElement = (infoToDisplay) => {
           checked={isAreaChecked}
           className='body-area-title__inbox'
         ></input>
-
         <label
           className='body-area-title__label'
           htmlFor={infoToDisplay.infoToDisplay.id}
@@ -34,7 +34,7 @@ const SingleInfoElement = (infoToDisplay) => {
           infoToDisplay.infoToDisplay.txt === 'AUDIO' ? (
             <AudioPlayerComponent audioName='NO_TOUCH' />
           ) : (
-            <div>KARTA</div>
+            <PdfComponent pdfName='NO_TOUCH' />
           )
         ) : null}
       </section>
