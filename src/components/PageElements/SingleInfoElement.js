@@ -6,6 +6,7 @@ import PdfComponent from '../PdfComponent';
 
 const SingleInfoElement = (infoToDisplay) => {
   const [isAreaChecked, setIsAreaChecked] = useState(false);
+  const info = infoToDisplay.infoToDisplay;
 
   const handleAreaAsCheckboxClick = (e) => setIsAreaChecked(!isAreaChecked);
 
@@ -14,27 +15,24 @@ const SingleInfoElement = (infoToDisplay) => {
       <header className='info-area-title'>
         <input
           type='checkbox'
-          id={infoToDisplay.infoToDisplay.id}
-          value={infoToDisplay.infoToDisplay.id}
+          id={info.id}
+          value={info.id}
           name='rd'
           onChange={handleAreaAsCheckboxClick}
           checked={isAreaChecked}
-          className='body-area-title__inbox'
+          className='info-area-title__inbox'
         ></input>
-        <label
-          className='body-area-title__label'
-          htmlFor={infoToDisplay.infoToDisplay.id}
-        >
-          {infoToDisplay.infoToDisplay.title}
+        <label className='info-area-title__label' htmlFor={info.id}>
+          {info.title}
           <PointHandWithWristband />
         </label>
       </header>
       <section>
         {isAreaChecked ? (
-          infoToDisplay.infoToDisplay.txt === 'AUDIO' ? (
-            <AudioPlayerComponent audioName='NO_TOUCH' />
+          info.type === 'AUDIO' ? (
+            <AudioPlayerComponent audioName={info.technique} />
           ) : (
-            <PdfComponent pdfName='NO_TOUCH' />
+            <PdfComponent pdfName={info.technique} />
           )
         ) : null}
       </section>

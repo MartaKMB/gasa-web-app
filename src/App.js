@@ -8,7 +8,7 @@ import DashboardPage from './views/DashboardPage';
 import StartChoicePage from './views/StartChoicePage';
 import AllTechniquesPage from './views/AllTechniquesPage';
 import BodyPartChoicePage from './views/BodyPartChoicePage';
-import NoTouchPage from './views/NoTouchPage';
+import IntroductionsTechniquePage from './views/IntroductionsTechniquePage';
 
 function App() {
   return (
@@ -44,10 +44,10 @@ function App() {
             }
           />
           <Route
-            path='no-touch-techniques'
+            path='introductions-techniques/:choice'
             element={
               <PrivateRoute>
-                <NoTouchPage />
+                <IntroductionsTechniquePage />
               </PrivateRoute>
             }
           />
@@ -67,6 +67,3 @@ function App() {
 }
 
 export default App;
-
-// architecrture based on https://www.knowledgehut.com/blog/web-development/react-js-architecture
-// styles not touched yet

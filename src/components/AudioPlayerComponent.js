@@ -73,13 +73,16 @@ const AudioPlayerComponent = (audioName) => {
     }
   };
 
+  const audioTitle =
+    choosenAudio &&
+    choosenAudio.audioTitle &&
+    choosenAudio.audioTitle.toUpperCase();
+
   return (
     <section className='gasa-app-audio-player'>
       <div className='gasa-app-audio-player__img-cover'></div>
       <div>
-        <h2 className='gasa-app-audio-player__title'>
-          Sesja relaksu bez dotyku
-        </h2>
+        <h2 className='gasa-app-audio-player__title'>{audioTitle}</h2>
         <p className='gasa-app-audio-player__subtitle'>Praktyka prowadzona</p>
       </div>
       <div>

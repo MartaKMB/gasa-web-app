@@ -27,10 +27,10 @@ const StartChoicePage = () => {
         navigate('/choice-body-techniques');
         break;
       case 'NO_TOUCH':
-        navigate('/no-touch-techniques');
+        navigate('/introductions-techniques/no_touch');
         break;
       case 'FIRST_TOUCH':
-        console.log('klik w: ', ownerChoice);
+        navigate('/introductions-techniques/first_touch');
         break;
       default:
         console.log('nic nie zostało wybrane');

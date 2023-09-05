@@ -23,7 +23,12 @@ const PdfComponent = (pdfName) => {
 
   return (
     <section className='gasa-app-pdf-viewer'>
-      <a href={choosenFilePath} className='gasa-app-pdf-viewer__download-link'>
+      <a
+        href={choosenFilePath}
+        target='_blank'
+        rel='noreferrer'
+        className='gasa-app-pdf-viewer__download-link'
+      >
         Otwórz i pobierz PDF z kartką praktyki
       </a>
       <Document file={choosenFilePath}>

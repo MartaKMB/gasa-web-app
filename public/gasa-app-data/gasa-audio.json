@@ -6,8 +6,14 @@
     {
       "id": "gasa-audio-0",
       "audioName": "NO_TOUCH",
-      "audioTitle": "praktyka prowadzona - sesja relaksu bez dotyku",
-      "audioMP3": "gasa-app-audio/no-touch-practice.mp3"
+      "audioTitle": "sesja relaksu bez dotyku",
+      "audioMP3": "/gasa-app-audio/no-touch-practice.mp3"
+    },
+    {
+      "id": "gasa-audio-1",
+      "audioName": "FIRST_TOUCH",
+      "audioTitle": "wprowadzenie do dotyku",
+      "audioMP3": "/gasa-app-audio/first-touch-practice.mp3"
     }
   ]
 }
