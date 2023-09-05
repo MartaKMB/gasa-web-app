@@ -18,8 +18,6 @@ const BodyPartChoicePage = () => {
     e.preventDefault();
     setChoosenBodyPart(dogChoice);
     setIsBodyPartChoosen(true);
-    console.log('mój pies wybrał: ', dogChoice);
-    console.log('area w komponencie:', choosenArea);
   };
 
   const areaTechniquesToDisplay =

@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# GaSa App for DOG LOVERS
+
+![Screenshot of a app on different devices](./public/readme-images/gasa-app-different-devices-screen-shot.png)
+
+### Table of content
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [About Author](#about-author)
+
+## Description
+
+- React web application for dog 🐶 owners who would like to massage their pets with GaSa technique.
+- GaSa present a unique approach to animal relaxation massage - for creating a relaxing ritual that suits you and your dog best.
+- Dog lovers learn the ways to stroke their pet. But there is not the only one valid way to perform them. Application allows to choose technique.
+- We start a GaSa massage at a point that is comfortable for our pet. ❤️ If they don’t like to be touched, we start from . . . "non-touching".
+
+### About project
+
+- Application optimized for mobile view. 📲
+
+![Screenshot of a app on mobile devices](./public/readme-images/gasa-app-mobile-screen-shot.png)
+
+### Technologies
+
+- JavaScript / React
+- CSS / SCSS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the project directory, you can run the app in the development mode.
 
-## Available Scripts
+```
+npm start
+```
 
-In the project directory, you can run:
+### What toolset did I use and learn in this project?
 
-### `npm start`
+- Redux / @reduxjs/toolkit
+- React Router
+- React-PDF
+- useSound / a React Hook for Sounds Effect
+- GitHub Pages / gh-pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Work In Progress
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It is still "work in progress", I still have some issues and challenges, but I will handle it. 💪
 
-### `npm test`
+I deploy first version "GaSa App" and keep in mind that I would like make fixes and improvements in next versions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Improvments to make after first deploy on gh-pages (version x.x.x):
 
-### `npm run build`
+- [ ] Add tests
+- [ ] Add menu bar
+- [ ] Add settings view
+- [ ] Add real login option
+- [ ] Make english version of application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How To Use
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone the project and run `npm start`
+- Go to [GitHub Page - version x.x.x] and login with random name and e-mail, password: `gasa2023demo`
+- `TODO` When application will be ready I will deploy it on my server. 🚧
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About Author
 
-### `npm run eject`
+Hello! 👋
+I am Marta, front-end developer and creator of GaSa technique.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [My LinkedIn](https://www.linkedin.com/in/m-mucha-balcerek/)
+- 🇵🇱 [GaSa Website](https://gasa.martamucha.pl/)
+- 🇬🇧 soon

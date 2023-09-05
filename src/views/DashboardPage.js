@@ -40,7 +40,11 @@ const DashboardPage = () => {
         </ul>
       </section>
       <footer className='anchor-dashboard-section'>
-        <a href='https://martamucha.pl/kontakt'>
+        <a
+          href='https://martamucha.pl/kontakt'
+          target='_blank'
+          rel='noreferrer'
+        >
           DAJ ZNAĆ, jak Ci się podoba aplikacja!
         </a>
       </footer>
