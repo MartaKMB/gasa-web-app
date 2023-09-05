@@ -20,7 +20,7 @@ export const fetchAudio = createAsyncThunk('audio/fetchAudio', async () => {
 });
 
 const audioSlice = createSlice({
-  name: 'audioPractice',
+  name: 'audio',
   initialState,
   reducers: {},
   extraReducers(builder) {

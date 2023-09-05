@@ -16,7 +16,6 @@ function App() {
       <div className='gasa-web-app-container'>
         <Routes>
           <Route path='/' exact element={<WelcomePage />} />
-          {/* <Route path="news" element={<News />} /> */}
           {/* <Route path="contact" element={<Contact />} /> */}
           <Route path='login' element={<LoginPage />} />
           <Route

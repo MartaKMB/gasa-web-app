@@ -20,7 +20,7 @@ export const fetchFile = createAsyncThunk('audio/fetchFile', async () => {
 });
 
 const fileSlice = createSlice({
-  name: 'fileForPractice',
+  name: 'file',
   initialState,
   reducers: {},
   extraReducers(builder) {
