@@ -45,7 +45,7 @@ It is still "work in progress", I still have some issues and challenges, but I w
 
 I deploy first version "GaSa App" and keep in mind that I would like make fixes and improvements in next versions.
 
-Improvments to make after first deploy on gh-pages (version 1.0.0):
+Improvments to make after first deploy on gh-pages (gasa-web-app@0.1.0 deploy):
 
 - [ ] Improve, fix issues and add audio functionality and pdf viewer
 - [ ] Add tests
@@ -57,7 +57,7 @@ Improvments to make after first deploy on gh-pages (version 1.0.0):
 ## How To Use
 
 - Clone the project and run `npm start`
-- Go to [GitHub Page - version 1.0.0] and login with random name and e-mail, password: `gasa2023demo`
+- Go to [GitHub Page - version 0.1.0](https://martakmb.github.io/gasa-web-app/) and login with random name and e-mail, password: `gasa2023demo`
 - `TODO` When application will be ready I will deploy it on my server. 🚧
 
 ## About Author
@@ -67,4 +67,3 @@ I am Marta, front-end developer and creator of GaSa technique.
 
 - [My LinkedIn](https://www.linkedin.com/in/m-mucha-balcerek/)
 - 🇵🇱 [GaSa Website](https://gasa.martamucha.pl/)
-- 🇬🇧 `TODO`
