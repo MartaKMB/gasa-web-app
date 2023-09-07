@@ -13,7 +13,7 @@
 - React web application for dog 🐶 owners who would like to massage their pets with GaSa technique.
 - GaSa present a unique approach to animal relaxation massage - for creating a relaxing ritual that suits you and your dog best.
 - Dog lovers learn the ways to stroke their pet. But there is not the only one valid way to perform them. Application allows to choose technique.
-- We start a GaSa massage at a point that is comfortable for our pet. ❤️ If they don’t like to be touched, we start from . . . "non-touching".
+- We start a GaSa massage at a point that is comfortable for our pet. ❤️ If they don’t like to be touched, we start from... "non-touching".
 
 ### About project
 
@@ -37,8 +37,6 @@ npm start
 
 - Redux / @reduxjs/toolkit
 - React Router
-- React-PDF
-- useSound / a React Hook for Sounds Effect
 - GitHub Pages / gh-pages
 
 ### Work In Progress
@@ -47,8 +45,9 @@ It is still "work in progress", I still have some issues and challenges, but I w
 
 I deploy first version "GaSa App" and keep in mind that I would like make fixes and improvements in next versions.
 
-Improvments to make after first deploy on gh-pages (version x.x.x):
+Improvments to make after first deploy on gh-pages (version 1.0.0):
 
+- [ ] Improve, fix issues and add audio functionality and pdf viewer
 - [ ] Add tests
 - [ ] Add menu bar
 - [ ] Add settings view
@@ -58,7 +57,7 @@ Improvments to make after first deploy on gh-pages (version x.x.x):
 ## How To Use
 
 - Clone the project and run `npm start`
-- Go to [GitHub Page - version x.x.x] and login with random name and e-mail, password: `gasa2023demo`
+- Go to [GitHub Page - version 1.0.0] and login with random name and e-mail, password: `gasa2023demo`
 - `TODO` When application will be ready I will deploy it on my server. 🚧
 
 ## About Author
@@ -68,4 +67,4 @@ I am Marta, front-end developer and creator of GaSa technique.
 
 - [My LinkedIn](https://www.linkedin.com/in/m-mucha-balcerek/)
 - 🇵🇱 [GaSa Website](https://gasa.martamucha.pl/)
-- 🇬🇧 soon
+- 🇬🇧 `TODO`

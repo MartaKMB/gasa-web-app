@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const GASA_TECHNIQUES_URL = 'gasa-app-data/gasa-techniques.json';
+const GASA_TECHNIQUES_URL = 'gasa-app-data/gasa-techniques-demo.json';
 
 const initialState = {
   name: 'idle | All GaSa techniques',

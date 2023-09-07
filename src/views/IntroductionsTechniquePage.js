@@ -1,16 +1,18 @@
 import { useParams } from 'react-router-dom';
 
 import LyingDog from '../assets/svgImages/LyingDog';
-import SingleInfoElement from '../components/PageElements/SingleInfoElement';
 import NoTouchDescription from '../components/PageElements/NoTouchDescription';
 import FirstTouchDescription from '../components/PageElements/FirstTouchDescription';
 
-import { fetchAudio } from '../store/audioSlice';
-import { fetchFile } from '../store/fileSlice';
-import store from '../store/store';
+// TODO: Improve, fix issues and add audio functionality and pdf viewer
+// import SingleInfoElement from '../components/PageElements/SingleInfoElement';
 
-store.dispatch(fetchAudio());
-store.dispatch(fetchFile());
+// import { fetchAudio } from '../store/audioSlice';
+// import { fetchFile } from '../store/fileSlice';
+// import store from '../store/store';
+
+// store.dispatch(fetchAudio());
+// store.dispatch(fetchFile());
 
 const IntroductionsTechniquePage = () => {
   let { choice } = useParams();
@@ -31,22 +33,22 @@ const IntroductionsTechniquePage = () => {
       <LyingDog />
       <header className='introductions-title'>{choiceTitle}</header>
       {choiceDescriptionBasedOnParam}
-      <SingleInfoElement
+      {/* <SingleInfoElement
         infoToDisplay={{
           title: 'karta praktyki',
           id: 1,
           type: 'PDF',
           technique: choiceUpperCase,
         }}
-      />
-      <SingleInfoElement
+      /> */}
+      {/* <SingleInfoElement
         infoToDisplay={{
           title: 'nagranie audio',
           id: 2,
           type: 'AUDIO',
           technique: choiceUpperCase,
         }}
-      />
+      /> */}
     </section>
   );
 };
