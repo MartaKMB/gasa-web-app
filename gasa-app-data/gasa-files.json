@@ -1,0 +1,21 @@
+{
+  "name": "GaSa files",
+  "copyrights": "© DeGaSa - Marta Mucha-Balcerek",
+  "email": "kontakt@martamucha.pl",
+  "fileForGasaPractices": [
+    {
+      "id": "gasa-file-0",
+      "fileName": "NO_TOUCH",
+      "fileType": "PDF",
+      "fileTitle": "karta praktyki - sesja relaksu bez dotyku",
+      "filePath": "/gasa-app-pdf-files/no-touch-practice-card.pdf"
+    },
+    {
+      "id": "gasa-file-1",
+      "fileName": "FIRST_TOUCH",
+      "fileType": "PDF",
+      "fileTitle": "karta praktyki - sesja wprowadzająca do uwanego dotyku",
+      "filePath": "/gasa-app-pdf-files/first-touch-practice-card.pdf"
+    }
+  ]
+}

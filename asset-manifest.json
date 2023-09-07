@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gasa-web-app/static/css/main.3f608105.css",
+    "main.js": "/gasa-web-app/static/js/main.14682d44.js",
+    "static/media/img-for-audio.jpg": "/gasa-web-app/static/media/img-for-audio.a43263817f102b2d88ac.jpg",
+    "index.html": "/gasa-web-app/index.html",
+    "main.3f608105.css.map": "/gasa-web-app/static/css/main.3f608105.css.map",
+    "main.14682d44.js.map": "/gasa-web-app/static/js/main.14682d44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f608105.css",
+    "static/js/main.14682d44.js"
+  ]
+}
