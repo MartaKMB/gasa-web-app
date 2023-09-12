@@ -1,0 +1,22 @@
+.gasa-app-menu-container {
+  height: 50px;
+  width: 100%;
+  background-color: $rgba-base-pink;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .menu-bar {
+    height: 100%;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__circle {
+      height: 65%;
+    }
+  }
+}
