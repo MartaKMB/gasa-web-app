@@ -19,4 +19,25 @@
       height: 65%;
     }
   }
+
+  .menu-list {
+    background-color: $base-pink;
+    // display: flex;
+    display: none;
+    height: 250px;
+    max-height: calc(100vh - 50px - 1em);
+    max-width: 400px;
+    position: absolute;
+    top: 50px;
+    width: 90vw;
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2em;
+
+    li {
+      list-style: none;
+    }
+  }
 }

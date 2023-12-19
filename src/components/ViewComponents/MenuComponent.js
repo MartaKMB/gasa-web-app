@@ -10,13 +10,13 @@ const MenuComponent = () => {
         <IconContext.Provider value={{ size: '1.5em', color: '#2b2b2b' }}>
           <AiOutlineMenu />
         </IconContext.Provider>
-        {/* <ul>
-        <li>START</li>
-        <li>PRZYKŁADOWE SESJE</li>
-        <li>PODĄŻAJ ZA PSEM</li>
-        <li>USTAWIENIA</li>
-        <li>KONTAKT</li>
-      </ul> */}
+        <ul className='gasa-app-menu-container__menu-list menu-list'>
+          <li>START</li>
+          <li>PRZYKŁADOWE SESJE</li>
+          <li>PODĄŻAJ ZA PSEM</li>
+          <li>USTAWIENIA</li>
+          <li>KONTAKT</li>
+        </ul>
         <img
           src={appCircle}
           alt='kółko aplikacji'

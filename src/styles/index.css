@@ -19,10 +19,41 @@
     transform: rotate(0);
   }
 }
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: #2b2b2b;
+  font-size: small;
 }
 
 .dog-head-container {
@@ -33,15 +64,64 @@
   animation: 3s wiggle ease infinite;
 }
 
+.dog-paw-container {
+  width: 45%;
+  padding: 1em;
+  animation: 3s wiggle ease infinite;
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.gasa-app-menu-container {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(237, 185, 187, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.gasa-app-menu-container .menu-bar {
+  height: 100%;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gasa-app-menu-container .menu-bar__circle {
+  height: 65%;
+}
+.gasa-app-menu-container .menu-list {
+  background-color: #f8afb2;
+  display: none;
+  height: 250px;
+  max-height: calc(100vh - 50px - 1em);
+  max-width: 400px;
+  position: absolute;
+  top: 50px;
+  width: 90vw;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 2em;
+}
+.gasa-app-menu-container .menu-list li {
+  list-style: none;
+}
+
 .gasa-app-button {
   text-transform: uppercase;
   font-size: 1.3em;
   line-height: 1.3;
   padding: 1em;
   border-radius: 15px;
-  background-color: #F0AF02;
+  background-color: #f0af02;
   cursor: pointer;
   width: 100%;
+  margin: 1em 0;
 }
 .gasa-app-button:hover {
   background-color: transparent;
@@ -49,13 +129,16 @@
 .gasa-app-button--with-pulse {
   animation: 1s wiggle ease 10s 10;
 }
+.gasa-app-button--invisible {
+  display: none;
+}
 
 .gasa-app-welcome-txt__welcome-txt {
   text-align: center;
-  border: 2px solid #2B2B2B;
+  border: 2px solid #2b2b2b;
   padding: 1em;
   line-height: 1.5;
-  background-color: #F8AFB2;
+  background-color: #f8afb2;
   border-radius: 15px;
 }
 .gasa-app-welcome-txt__welcome-txt h1 {
@@ -70,57 +153,159 @@
 .gasa-app-wrong-data-message {
   width: 100%;
   font-weight: 700;
-  color: #D45715;
+  color: #d45715;
   text-transform: uppercase;
   text-align: center;
 }
 
+.gasa-app-audio-player {
+  background-color: #f6f6f6;
+  max-width: 600px;
+  margin: 1em auto;
+  padding: 2em 0;
+  border: 0.1px solid #2b2b2b;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gasa-app-audio-player__img-cover {
+  max-width: 80%;
+  height: 300px;
+  min-width: 300px;
+  background: black;
+  overflow: hidden;
+  background: rgba(237, 185, 187, 0.6);
+  background: linear-gradient(rgba(99, 183, 106, 0.6), rgba(237, 185, 187, 0.6)), url("../../assets/jpgImages/img-for-audio.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+  border-radius: 15px;
+}
+.gasa-app-audio-player__title, .gasa-app-audio-player__subtitle {
+  color: #2b2b2b;
+}
+.gasa-app-audio-player__time {
+  margin: 0 auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  color: #63b76a;
+  font-size: smaller;
+}
+.gasa-app-audio-player__time-line {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.gasa-app-audio-player__play-button {
+  background: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.gasa-app-audio-player input[type=range]:focus {
+  outline: none;
+}
+.gasa-app-audio-player input[type=range]::-webkit-slider-runnable-track {
+  background: #63b76a;
+  height: 0.5rem;
+  border-radius: 15px;
+}
+.gasa-app-audio-player input[type=range]::-moz-range-track {
+  background: #63b76a;
+  height: 0.5rem;
+  border-radius: 15px;
+}
+.gasa-app-audio-player input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -0.25em;
+  background-color: #63b76a;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+}
+.gasa-app-audio-player input[type=range]::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  background-color: #63b76a;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+}
+.gasa-app-audio-player input[type=range]:focus::-webkit-slider-thumb {
+  border: 1px solid #d45715;
+  outline: 1px solid #d45715;
+  outline-offset: 0.1em;
+}
+.gasa-app-audio-player input[type=range]:focus::-moz-range-thumb {
+  border: 1px solid #d45715;
+  outline: 1px solid #d45715;
+  outline-offset: 0.1em;
+}
+
+.gasa-app-pdf-viewer {
+  max-width: 600px;
+  padding: 1em 0 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gasa-app-pdf-viewer__download-link {
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-image: linear-gradient(#f8afb2 0 0);
+  background-size: 200% 0.75em;
+  background-position: 200% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0.3s 0.3s;
+  border-bottom: 2px #f8afb2 solid;
+}
+.gasa-app-pdf-viewer__download-link:hover {
+  transition: background-size 0.3s 0.3s, background-position 0.3s;
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+}
+
 .gasa-web-app-container {
-  background-color: #FCF1DA;
-  width: 100vw;
-  height: 100vh;
+  background-color: #fcf1da;
+  width: 100%;
+  height: 100%;
   font-family: "Lato", sans-serif;
-  color: #2B2B2B;
+  color: #2b2b2b;
+  padding-top: 40px;
 }
 
-.welcome-page {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.welcome-page__container {
+.welcome-page-container {
   width: 95%;
   max-width: 400px;
-  height: 95%;
-  max-height: 700px;
-  padding: 0.5em 2em;
+  padding: 3em 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto 0;
 }
 
-.login-page {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.login-page__container {
+.login-page-container {
   width: 95%;
   max-width: 400px;
-  height: 95%;
-  max-height: 700px;
-  padding: 0.5em 2em;
+  padding: 3em 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto 0;
 }
-.login-page .form-section {
+.login-page-container .form-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -128,20 +313,301 @@
   max-height: calc(100% - 200px);
   height: 60%;
   width: 100%;
+  padding-top: 2em;
 }
-.login-page .form-section__form-element {
+.login-page-container .form-section__form-element {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
-.login-page .form-section__form-element input[type=text],
-.login-page .form-section__form-element input[type=email],
-.login-page .form-section__form-element input[type=password] {
+.login-page-container .form-section__form-element input[type=text],
+.login-page-container .form-section__form-element input[type=email],
+.login-page-container .form-section__form-element input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border-radius: 15px;
   font-size: 1.3em;
+}
+
+.dashboard-page-container {
+  width: 95%;
+  max-width: 400px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto 0;
+}
+.dashboard-page-container .welcome-dashboard-section,
+.dashboard-page-container .rules-dashboard-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 35%;
+}
+.dashboard-page-container .welcome-dashboard-section__hello-txt {
+  font-size: 2em;
+  text-align: center;
+}
+.dashboard-page-container .welcome-dashboard-section__app-description-txt {
+  text-align: center;
+  padding-top: 1em;
+}
+.dashboard-page-container .rules-dashboard-section {
+  border-radius: 15px;
+  background-color: #d45715;
+  padding: 0 2em 1em;
+  color: #f6e8cc;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.dashboard-page-container .rules-dashboard-section__rules-title {
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #f6e8cc;
+  color: #d45715;
+  padding: 0.5em;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: none;
+  border-top-style: none;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.dashboard-page-container .rules-dashboard-section li {
+  padding-bottom: 0.25em;
+}
+.dashboard-page-container .anchor-dashboard-section {
+  text-align: center;
+}
+
+.choice-page-container {
+  width: 95%;
+  max-width: 400px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto 0;
+}
+.choice-page-container .start-choice-page-header {
+  display: flex;
+  margin-bottom: 1em;
+}
+.choice-page-container .start-choice-page-header__choice-title {
+  padding-left: 1em;
+  text-align: center;
+}
+.choice-page-container .start-choice-page-section {
+  border-bottom: 1px solid #2b2b2b;
+}
+.choice-page-container .start-choice-page-section:last-child {
+  border-bottom: none;
+}
+.choice-page-container .start-choice-page-section__section-description {
+  text-align: center;
+  padding: 0.5em 0;
+}
+.choice-page-container .start-choice-page-section .gasa-app-button:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.all-techniques-container,
+.body-choice-techniques-container,
+.introductions-techniques-container {
+  width: 95%;
+  max-width: 400px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto 0;
+}
+.all-techniques-container .all-techniques-title,
+.all-techniques-container .body-choice-techniques-title,
+.all-techniques-container .introductions-title,
+.body-choice-techniques-container .all-techniques-title,
+.body-choice-techniques-container .body-choice-techniques-title,
+.body-choice-techniques-container .introductions-title,
+.introductions-techniques-container .all-techniques-title,
+.introductions-techniques-container .body-choice-techniques-title,
+.introductions-techniques-container .introductions-title {
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #f8afb2;
+  color: #2b2b2b;
+  padding: 0.5em;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid #2b2b2b;
+  border-top-style: none;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  transform: translate(0, -29px);
+  width: 85%;
+  align-self: center;
+}
+.all-techniques-container .all-techniques-title--after-choice,
+.all-techniques-container .body-choice-techniques-title--after-choice,
+.all-techniques-container .introductions-title--after-choice,
+.body-choice-techniques-container .all-techniques-title--after-choice,
+.body-choice-techniques-container .body-choice-techniques-title--after-choice,
+.body-choice-techniques-container .introductions-title--after-choice,
+.introductions-techniques-container .all-techniques-title--after-choice,
+.introductions-techniques-container .body-choice-techniques-title--after-choice,
+.introductions-techniques-container .introductions-title--after-choice {
+  transform: translate(0, 0);
+  margin-bottom: 0;
+}
+.all-techniques-container .choosen-body-part-techniques-section,
+.body-choice-techniques-container .choosen-body-part-techniques-section,
+.introductions-techniques-container .choosen-body-part-techniques-section {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #2b2b2b;
+}
+.all-techniques-container .body-choice-techniques-buttons-section--after-choice,
+.body-choice-techniques-container .body-choice-techniques-buttons-section--after-choice,
+.introductions-techniques-container .body-choice-techniques-buttons-section--after-choice {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 0.75em;
+       column-gap: 0.75em;
+}
+.all-techniques-container .body-choice-techniques-buttons-section--after-choice .gasa-app-button,
+.body-choice-techniques-container .body-choice-techniques-buttons-section--after-choice .gasa-app-button,
+.introductions-techniques-container .body-choice-techniques-buttons-section--after-choice .gasa-app-button {
+  font-size: small;
+}
+.all-techniques-container .techniques-for-body-area-section .body-area-title,
+.all-techniques-container .techniques-for-body-area-section .info-area-title,
+.all-techniques-container .info-area-section .body-area-title,
+.all-techniques-container .info-area-section .info-area-title,
+.body-choice-techniques-container .techniques-for-body-area-section .body-area-title,
+.body-choice-techniques-container .techniques-for-body-area-section .info-area-title,
+.body-choice-techniques-container .info-area-section .body-area-title,
+.body-choice-techniques-container .info-area-section .info-area-title,
+.introductions-techniques-container .techniques-for-body-area-section .body-area-title,
+.introductions-techniques-container .techniques-for-body-area-section .info-area-title,
+.introductions-techniques-container .info-area-section .body-area-title,
+.introductions-techniques-container .info-area-section .info-area-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.all-techniques-container .single-technique-element,
+.all-techniques-container .no-touch-description,
+.all-techniques-container .first-touch-description,
+.body-choice-techniques-container .single-technique-element,
+.body-choice-techniques-container .no-touch-description,
+.body-choice-techniques-container .first-touch-description,
+.introductions-techniques-container .single-technique-element,
+.introductions-techniques-container .no-touch-description,
+.introductions-techniques-container .first-touch-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0 1em;
+  margin-bottom: 1em;
+  border: 1px solid #2b2b2b;
+  border-radius: 15px;
+}
+.all-techniques-container .single-technique-element__technique-title,
+.all-techniques-container .no-touch-description__technique-title,
+.all-techniques-container .first-touch-description__technique-title,
+.body-choice-techniques-container .single-technique-element__technique-title,
+.body-choice-techniques-container .no-touch-description__technique-title,
+.body-choice-techniques-container .first-touch-description__technique-title,
+.introductions-techniques-container .single-technique-element__technique-title,
+.introductions-techniques-container .no-touch-description__technique-title,
+.introductions-techniques-container .first-touch-description__technique-title {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  text-align: center;
+}
+.all-techniques-container .single-technique-element__technique-image,
+.all-techniques-container .no-touch-description__technique-image,
+.all-techniques-container .first-touch-description__technique-image,
+.body-choice-techniques-container .single-technique-element__technique-image,
+.body-choice-techniques-container .no-touch-description__technique-image,
+.body-choice-techniques-container .first-touch-description__technique-image,
+.introductions-techniques-container .single-technique-element__technique-image,
+.introductions-techniques-container .no-touch-description__technique-image,
+.introductions-techniques-container .first-touch-description__technique-image {
+  height: auto;
+  max-height: 200px;
+  max-width: 100%;
+  margin: 1em 0;
+}
+.all-techniques-container .single-technique-element__technique-txt,
+.all-techniques-container .no-touch-description__technique-txt,
+.all-techniques-container .first-touch-description__technique-txt,
+.body-choice-techniques-container .single-technique-element__technique-txt,
+.body-choice-techniques-container .no-touch-description__technique-txt,
+.body-choice-techniques-container .first-touch-description__technique-txt,
+.introductions-techniques-container .single-technique-element__technique-txt,
+.introductions-techniques-container .no-touch-description__technique-txt,
+.introductions-techniques-container .first-touch-description__technique-txt {
+  padding: 1em;
+  line-height: 1.75;
+}
+.all-techniques-container .single-technique-element__technique-txt p,
+.all-techniques-container .no-touch-description__technique-txt p,
+.all-techniques-container .first-touch-description__technique-txt p,
+.body-choice-techniques-container .single-technique-element__technique-txt p,
+.body-choice-techniques-container .no-touch-description__technique-txt p,
+.body-choice-techniques-container .first-touch-description__technique-txt p,
+.introductions-techniques-container .single-technique-element__technique-txt p,
+.introductions-techniques-container .no-touch-description__technique-txt p,
+.introductions-techniques-container .first-touch-description__technique-txt p {
+  padding-bottom: 0.75em;
+}
+
+.body-choice-techniques-questionmark {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.point-hand-wrist-container {
+  height: 60px;
+  transform: rotate(-90deg) scale(1, -1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.body-area-title__inbox,
+.info-area-title__inbox {
+  display: none;
+}
+.body-area-title__inbox:checked + .body-area-title__label > .point-hand-wrist-container,
+.info-area-title__inbox:checked + .body-area-title__label > .point-hand-wrist-container {
+  transform: rotate(-135deg) scale(1, -1);
+}
+.body-area-title__label,
+.info-area-title__label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.body-area-title__label:hover,
+.info-area-title__label:hover {
+  font-weight: 700;
+}
+.body-area-title__label:hover .point-hand-wrist-container,
+.info-area-title__label:hover .point-hand-wrist-container {
+  transform: rotate(-105deg) scale(1, -1);
 }/*# sourceMappingURL=index.css.map */
