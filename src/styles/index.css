@@ -56,6 +56,10 @@ a {
   font-size: small;
 }
 
+svg {
+  z-index: 1;
+}
+
 .dog-head-container {
   width: 95%;
   padding-bottom: 2em;
@@ -93,22 +97,26 @@ a {
 .gasa-app-menu-container .menu-bar__circle {
   height: 65%;
 }
-.gasa-app-menu-container .menu-list {
+
+.gasa-app-menu-list {
   background-color: #f8afb2;
-  display: none;
+  display: flex;
   height: 250px;
   max-height: calc(100vh - 50px - 1em);
   max-width: 400px;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 0;
+  left: 50%;
   width: 90vw;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 2em;
+  z-index: 999;
+  transition: 1s;
 }
-.gasa-app-menu-container .menu-list li {
+.gasa-app-menu-list li {
   list-style: none;
 }
 

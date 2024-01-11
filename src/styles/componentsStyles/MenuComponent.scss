@@ -19,25 +19,26 @@
       height: 65%;
     }
   }
+}
 
-  .menu-list {
-    background-color: $base-pink;
-    // display: flex;
-    display: none;
-    height: 250px;
-    max-height: calc(100vh - 50px - 1em);
-    max-width: 400px;
-    position: absolute;
-    top: 50px;
-    width: 90vw;
-    border-bottom-left-radius: $base-border-radius;
-    border-bottom-right-radius: $base-border-radius;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 2em;
+.gasa-app-menu-list {
+  background-color: $base-pink;
+  border-bottom-right-radius: $base-border-radius;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+  left: -400px;
+  max-height: calc(100vh - 50px - 1em);
+  max-width: 400px;
+  padding-left: 2em;
+  position: fixed;
+  top: 50px;
+  transition: 1s;
+  width: 90vw;
+  z-index: 999;
 
-    li {
-      list-style: none;
-    }
+  li {
+    list-style: none;
   }
 }
