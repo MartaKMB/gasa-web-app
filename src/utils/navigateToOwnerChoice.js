@@ -28,5 +28,3 @@ export function navigateTo(ownerChoice, navigate) {
       console.log('nic nie zostało wybrane');
   }
 }
-
-// export default navigateTo;

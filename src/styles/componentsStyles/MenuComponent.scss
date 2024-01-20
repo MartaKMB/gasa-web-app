@@ -22,7 +22,7 @@
 }
 
 .gasa-app-menu-list {
-  background-color: $base-pink;
+  background-color: $rgba-base-pink;
   border-bottom-right-radius: $base-border-radius;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,20 @@
   z-index: 999;
 
   li {
+    background-color: $base-baige;
+    border-radius: $base-border-radius;
+    border: 1px solid $base-black-font;
+    cursor: pointer;
+    line-height: 1.15;
     list-style: none;
+    margin-left: -20%;
+    padding: 0.5rem;
+    text-align: right;
+    text-transform: uppercase;
+    width: 110%;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }

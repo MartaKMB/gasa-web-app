@@ -4,7 +4,7 @@ import RoundedPointHand from '../assets/svgImages/RoundedPointHand';
 import ButtonComponent from '../components/ButtonComponent';
 import store from '../store/store';
 import { fetchTechniques } from '../store/techniquesSlice';
-import { navigateTo } from '../utils/navigateTo';
+import { navigateTo } from '../utils/navigateToOwnerChoice';
 
 store.dispatch(fetchTechniques());
 

@@ -5,7 +5,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 
 import appCircle from '../../assets/pngImages/circle.png';
-import { navigateTo } from '../../utils/navigateTo';
+import { navigateTo } from '../../utils/navigateToOwnerChoice';
 
 const MenuComponent = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -24,7 +24,8 @@ const MenuComponent = () => {
 
   const handleOnChoice = (e, ownerChoice) => {
     e.preventDefault();
-    navigateTo(ownerChoice, navigate)
+    navigateTo(ownerChoice, navigate);
+    setIsMenuVisible(false);
   };
 
   return (
