@@ -9,14 +9,17 @@ import StartChoicePage from './views/StartChoicePage';
 import AllTechniquesPage from './views/AllTechniquesPage';
 import BodyPartChoicePage from './views/BodyPartChoicePage';
 import IntroductionsTechniquePage from './views/IntroductionsTechniquePage';
+import MenuComponent from './components/ViewComponents/MenuComponent';
+import ContactPage from './views/ContactPage';
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className='gasa-web-app-container'>
+        <MenuComponent />
         <Routes>
           <Route path='/' exact element={<WelcomePage />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
+          <Route path="contact" element={<ContactPage />} />
           <Route path='login' element={<LoginPage />} />
           <Route
             path='dashboard'

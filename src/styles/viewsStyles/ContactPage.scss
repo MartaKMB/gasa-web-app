@@ -1,0 +1,31 @@
+.contact-page-container {
+    @include page-container;
+    
+    align-items: center;
+
+    &__email {
+        border-bottom: 2px solid $base-pink;
+        font-size: 1.75em;
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__website {
+        margin-bottom: 2em;
+
+        a {
+            font-size: 1.25em;
+        }
+    }
+
+    &__link {
+        margin-bottom: 1em;
+
+        span {
+            font-weight: 600;
+            margin-right: 1em;
+        }
+    }
+}

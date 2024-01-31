@@ -4,6 +4,7 @@ import RoundedPointHand from '../assets/svgImages/RoundedPointHand';
 import ButtonComponent from '../components/ButtonComponent';
 import store from '../store/store';
 import { fetchTechniques } from '../store/techniquesSlice';
+import { navigateTo } from '../utils/navigateToOwnerChoice';
 
 store.dispatch(fetchTechniques());
 
@@ -19,22 +20,7 @@ const StartChoicePage = () => {
 
   const handleOnChoice = (e, ownerChoice) => {
     e.preventDefault();
-    switch (ownerChoice) {
-      case 'ALL_TECHNIQUES':
-        navigate('/all-techniques');
-        break;
-      case 'DOG_CHOICE':
-        navigate('/choice-body-techniques');
-        break;
-      case 'NO_TOUCH':
-        navigate('/introductions-techniques/no_touch');
-        break;
-      case 'FIRST_TOUCH':
-        navigate('/introductions-techniques/first_touch');
-        break;
-      default:
-        console.log('nic nie zostało wybrane');
-    }
+    navigateTo(ownerChoice, navigate);
   };
 
   return (

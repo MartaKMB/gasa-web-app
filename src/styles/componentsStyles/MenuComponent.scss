@@ -1,0 +1,63 @@
+.gasa-app-menu-container {
+  height: 50px;
+  width: 100%;
+  background-color: $rgba-base-pink;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .menu-bar {
+    height: 100%;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      cursor: pointer;
+    }
+
+    &__circle {
+      height: 65%;
+      cursor: pointer;
+    }
+  }
+}
+
+.gasa-app-menu-list {
+  background-color: $rgba-base-pink;
+  border-bottom-right-radius: $base-border-radius;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+  left: -400px;
+  max-height: calc(100vh - 50px - 1em);
+  max-width: 400px;
+  padding-left: 2em;
+  position: fixed;
+  top: 50px;
+  transition: 1s;
+  width: 90vw;
+  z-index: 999;
+
+  li {
+    background-color: $base-baige;
+    border-radius: $base-border-radius;
+    border: 1px solid $base-black-font;
+    cursor: pointer;
+    line-height: 1.15;
+    list-style: none;
+    margin-left: -20%;
+    padding: 0.5rem;
+    text-align: right;
+    text-transform: uppercase;
+    width: 110%;
+
+    &:hover {
+      background-color: $base-pink;
+    }
+  }
+}
