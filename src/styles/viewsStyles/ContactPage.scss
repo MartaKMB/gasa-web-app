@@ -1,0 +1,26 @@
+.contact-page-container {
+    @include page-container;
+    
+    align-items: center;
+
+    &__email {
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid $base-pink;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
+
+    &__website {
+        margin-bottom: 2em;
+    }
+
+    &__link {
+        margin-bottom: 1em;
+
+        span {
+            font-weight: 600;
+            margin-right: 1em;
+        }
+    }
+}

@@ -22,7 +22,7 @@ export function navigateTo(ownerChoice, navigate) {
       console.log('SETTINGS');
       break;
     case 'CONTACT':
-      console.log('CONTACT');
+      navigate('/contact');
       break;
     default:
       console.log('nic nie zostało wybrane');

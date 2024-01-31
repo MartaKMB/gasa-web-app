@@ -19,22 +19,6 @@ const MenuComponent = () => {
     'CONTACT',
   ];
 
-  // WIP: click outside menu
-  // let menuRef = useRef();
-  // useEffect(() => {
-  //   let handler = (e) => {
-  //     if(menuRef.current.contains(e.target)) {
-  //       setIsMenuVisible(false);
-  //       console.log(menuRef.current);
-  //     }
-  //   };
-  //   document.addEventListener('mousedown', handler);
-
-  //   return() => {
-  //     document.removeEventListener('mousedown', handler);
-  //   };
-  // });
-
   const menuAnimation = { left: isMenuVisible && '0' };
 
   const handleMenuIconClick = () => setIsMenuVisible(!isMenuVisible);
@@ -72,9 +56,9 @@ const MenuComponent = () => {
         <li onClick={(e) => handleOnChoice(e, ownerChoiceArray[2])}>
           PODĄŻAJ ZA PSEM
         </li>
-        <li onClick={(e) => handleOnChoice(e, ownerChoiceArray[3])}>
+        {/* <li onClick={(e) => handleOnChoice(e, ownerChoiceArray[3])}>
           USTAWIENIA
-        </li>
+        </li> */}
         <li onClick={(e) => handleOnChoice(e, ownerChoiceArray[4])}>KONTAKT</li>
       </ul>
     </>
