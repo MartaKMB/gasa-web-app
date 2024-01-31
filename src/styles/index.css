@@ -630,4 +630,37 @@ a {
 .body-area-title__label:hover .point-hand-wrist-container,
 .info-area-title__label:hover .point-hand-wrist-container {
   transform: rotate(-105deg) scale(1, -1);
+}
+
+.contact-page-container {
+  width: 95%;
+  max-width: 400px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto 0;
+  align-items: center;
+}
+.contact-page-container__email {
+  border-bottom: 2px solid #f8afb2;
+  font-size: 1.75em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  width: 100%;
+}
+.contact-page-container__website {
+  margin-bottom: 2em;
+}
+.contact-page-container__website a {
+  font-size: 1.25em;
+}
+.contact-page-container__link {
+  margin-bottom: 1em;
+}
+.contact-page-container__link span {
+  font-weight: 600;
+  margin-right: 1em;
 }/*# sourceMappingURL=index.css.map */
