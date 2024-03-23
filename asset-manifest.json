@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/gasa-web-app/static/css/main.3f608105.css",
-    "main.js": "/gasa-web-app/static/js/main.14682d44.js",
+    "main.css": "/gasa-web-app/static/css/main.aae2f977.css",
+    "main.js": "/gasa-web-app/static/js/main.6aebbc83.js",
     "static/media/img-for-audio.jpg": "/gasa-web-app/static/media/img-for-audio.a43263817f102b2d88ac.jpg",
+    "static/media/circle.png": "/gasa-web-app/static/media/circle.28f17ac5466973ccdb00.png",
     "index.html": "/gasa-web-app/index.html",
-    "main.3f608105.css.map": "/gasa-web-app/static/css/main.3f608105.css.map",
-    "main.14682d44.js.map": "/gasa-web-app/static/js/main.14682d44.js.map"
+    "main.aae2f977.css.map": "/gasa-web-app/static/css/main.aae2f977.css.map",
+    "main.6aebbc83.js.map": "/gasa-web-app/static/js/main.6aebbc83.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f608105.css",
-    "static/js/main.14682d44.js"
+    "static/css/main.aae2f977.css",
+    "static/js/main.6aebbc83.js"
   ]
 }
